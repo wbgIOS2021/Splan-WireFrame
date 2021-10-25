@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2098FB1C2726B85000D07EDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2098FB1B2726B85000D07EDE /* AppDelegate.swift */; };
+		2098FB1E2726B85000D07EDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2098FB1D2726B85000D07EDE /* SceneDelegate.swift */; };
+		2098FB202726B85000D07EDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2098FB1F2726B85000D07EDE /* ViewController.swift */; };
+		2098FB232726B85000D07EDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2098FB212726B85000D07EDE /* Main.storyboard */; };
+		2098FB262726B85000D07EDE /* Splan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2098FB242726B85000D07EDE /* Splan.xcdatamodeld */; };
+		2098FB282726B85900D07EDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2098FB272726B85900D07EDE /* Assets.xcassets */; };
+		2098FB2B2726B85900D07EDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2098FB292726B85900D07EDE /* LaunchScreen.storyboard */; };
+		2098FB362726B85A00D07EDE /* SplanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2098FB352726B85A00D07EDE /* SplanTests.swift */; };
+		2098FB412726B85A00D07EDE /* SplanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2098FB402726B85A00D07EDE /* SplanUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2098FB322726B85A00D07EDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2098FB102726B85000D07EDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2098FB172726B85000D07EDE;
+			remoteInfo = Splan;
+		};
+		2098FB3D2726B85A00D07EDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2098FB102726B85000D07EDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2098FB172726B85000D07EDE;
+			remoteInfo = Splan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2098FB182726B85000D07EDE /* Splan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2098FB1B2726B85000D07EDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2098FB1D2726B85000D07EDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2098FB1F2726B85000D07EDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2098FB222726B85000D07EDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2098FB252726B85000D07EDE /* Splan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Splan.xcdatamodel; sourceTree = "<group>"; };
+		2098FB272726B85900D07EDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2098FB2A2726B85900D07EDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2098FB2C2726B85A00D07EDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2098FB312726B85A00D07EDE /* SplanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2098FB352726B85A00D07EDE /* SplanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplanTests.swift; sourceTree = "<group>"; };
+		2098FB372726B85A00D07EDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2098FB3C2726B85A00D07EDE /* SplanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2098FB402726B85A00D07EDE /* SplanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplanUITests.swift; sourceTree = "<group>"; };
+		2098FB422726B85A00D07EDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2098FB152726B85000D07EDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2098FB2E2726B85A00D07EDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2098FB392726B85A00D07EDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2098FB0F2726B85000D07EDE = {
+			isa = PBXGroup;
+			children = (
+				2098FB1A2726B85000D07EDE /* Splan */,
+				2098FB342726B85A00D07EDE /* SplanTests */,
+				2098FB3F2726B85A00D07EDE /* SplanUITests */,
+				2098FB192726B85000D07EDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2098FB192726B85000D07EDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2098FB182726B85000D07EDE /* Splan.app */,
+				2098FB312726B85A00D07EDE /* SplanTests.xctest */,
+				2098FB3C2726B85A00D07EDE /* SplanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2098FB1A2726B85000D07EDE /* Splan */ = {
+			isa = PBXGroup;
+			children = (
+				2098FB1B2726B85000D07EDE /* AppDelegate.swift */,
+				2098FB1D2726B85000D07EDE /* SceneDelegate.swift */,
+				2098FB1F2726B85000D07EDE /* ViewController.swift */,
+				2098FB212726B85000D07EDE /* Main.storyboard */,
+				2098FB272726B85900D07EDE /* Assets.xcassets */,
+				2098FB292726B85900D07EDE /* LaunchScreen.storyboard */,
+				2098FB2C2726B85A00D07EDE /* Info.plist */,
+				2098FB242726B85000D07EDE /* Splan.xcdatamodeld */,
+			);
+			path = Splan;
+			sourceTree = "<group>";
+		};
+		2098FB342726B85A00D07EDE /* SplanTests */ = {
+			isa = PBXGroup;
+			children = (
+				2098FB352726B85A00D07EDE /* SplanTests.swift */,
+				2098FB372726B85A00D07EDE /* Info.plist */,
+			);
+			path = SplanTests;
+			sourceTree = "<group>";
+		};
+		2098FB3F2726B85A00D07EDE /* SplanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2098FB402726B85A00D07EDE /* SplanUITests.swift */,
+				2098FB422726B85A00D07EDE /* Info.plist */,
+			);
+			path = SplanUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2098FB172726B85000D07EDE /* Splan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2098FB452726B85A00D07EDE /* Build configuration list for PBXNativeTarget "Splan" */;
+			buildPhases = (
+				2098FB142726B85000D07EDE /* Sources */,
+				2098FB152726B85000D07EDE /* Frameworks */,
+				2098FB162726B85000D07EDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Splan;
+			productName = Splan;
+			productReference = 2098FB182726B85000D07EDE /* Splan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2098FB302726B85A00D07EDE /* SplanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2098FB482726B85A00D07EDE /* Build configuration list for PBXNativeTarget "SplanTests" */;
+			buildPhases = (
+				2098FB2D2726B85A00D07EDE /* Sources */,
+				2098FB2E2726B85A00D07EDE /* Frameworks */,
+				2098FB2F2726B85A00D07EDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2098FB332726B85A00D07EDE /* PBXTargetDependency */,
+			);
+			name = SplanTests;
+			productName = SplanTests;
+			productReference = 2098FB312726B85A00D07EDE /* SplanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2098FB3B2726B85A00D07EDE /* SplanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2098FB4B2726B85A00D07EDE /* Build configuration list for PBXNativeTarget "SplanUITests" */;
+			buildPhases = (
+				2098FB382726B85A00D07EDE /* Sources */,
+				2098FB392726B85A00D07EDE /* Frameworks */,
+				2098FB3A2726B85A00D07EDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2098FB3E2726B85A00D07EDE /* PBXTargetDependency */,
+			);
+			name = SplanUITests;
+			productName = SplanUITests;
+			productReference = 2098FB3C2726B85A00D07EDE /* SplanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2098FB102726B85000D07EDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					2098FB172726B85000D07EDE = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					2098FB302726B85A00D07EDE = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 2098FB172726B85000D07EDE;
+					};
+					2098FB3B2726B85A00D07EDE = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 2098FB172726B85000D07EDE;
+					};
+				};
+			};
+			buildConfigurationList = 2098FB132726B85000D07EDE /* Build configuration list for PBXProject "Splan" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2098FB0F2726B85000D07EDE;
+			productRefGroup = 2098FB192726B85000D07EDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2098FB172726B85000D07EDE /* Splan */,
+				2098FB302726B85A00D07EDE /* SplanTests */,
+				2098FB3B2726B85A00D07EDE /* SplanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2098FB162726B85000D07EDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2098FB2B2726B85900D07EDE /* LaunchScreen.storyboard in Resources */,
+				2098FB282726B85900D07EDE /* Assets.xcassets in Resources */,
+				2098FB232726B85000D07EDE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2098FB2F2726B85A00D07EDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2098FB3A2726B85A00D07EDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2098FB142726B85000D07EDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2098FB262726B85000D07EDE /* Splan.xcdatamodeld in Sources */,
+				2098FB202726B85000D07EDE /* ViewController.swift in Sources */,
+				2098FB1C2726B85000D07EDE /* AppDelegate.swift in Sources */,
+				2098FB1E2726B85000D07EDE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2098FB2D2726B85A00D07EDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2098FB362726B85A00D07EDE /* SplanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2098FB382726B85A00D07EDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2098FB412726B85A00D07EDE /* SplanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2098FB332726B85A00D07EDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2098FB172726B85000D07EDE /* Splan */;
+			targetProxy = 2098FB322726B85A00D07EDE /* PBXContainerItemProxy */;
+		};
+		2098FB3E2726B85A00D07EDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2098FB172726B85000D07EDE /* Splan */;
+			targetProxy = 2098FB3D2726B85A00D07EDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2098FB212726B85000D07EDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2098FB222726B85000D07EDE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2098FB292726B85900D07EDE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2098FB2A2726B85900D07EDE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2098FB432726B85A00D07EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2098FB442726B85A00D07EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2098FB462726B85A00D07EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79G7F2QQ57;
+				INFOPLIST_FILE = Splan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.webguru-india.com.Splan";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2098FB472726B85A00D07EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79G7F2QQ57;
+				INFOPLIST_FILE = Splan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.webguru-india.com.Splan";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2098FB492726B85A00D07EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79G7F2QQ57;
+				INFOPLIST_FILE = SplanTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.webguru-india.com.SplanTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Splan.app/Splan";
+			};
+			name = Debug;
+		};
+		2098FB4A2726B85A00D07EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79G7F2QQ57;
+				INFOPLIST_FILE = SplanTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.webguru-india.com.SplanTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Splan.app/Splan";
+			};
+			name = Release;
+		};
+		2098FB4C2726B85A00D07EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79G7F2QQ57;
+				INFOPLIST_FILE = SplanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.webguru-india.com.SplanUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Splan;
+			};
+			name = Debug;
+		};
+		2098FB4D2726B85A00D07EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79G7F2QQ57;
+				INFOPLIST_FILE = SplanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.webguru-india.com.SplanUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Splan;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2098FB132726B85000D07EDE /* Build configuration list for PBXProject "Splan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2098FB432726B85A00D07EDE /* Debug */,
+				2098FB442726B85A00D07EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2098FB452726B85A00D07EDE /* Build configuration list for PBXNativeTarget "Splan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2098FB462726B85A00D07EDE /* Debug */,
+				2098FB472726B85A00D07EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2098FB482726B85A00D07EDE /* Build configuration list for PBXNativeTarget "SplanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2098FB492726B85A00D07EDE /* Debug */,
+				2098FB4A2726B85A00D07EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2098FB4B2726B85A00D07EDE /* Build configuration list for PBXNativeTarget "SplanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2098FB4C2726B85A00D07EDE /* Debug */,
+				2098FB4D2726B85A00D07EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2098FB242726B85000D07EDE /* Splan.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2098FB252726B85000D07EDE /* Splan.xcdatamodel */,
+			);
+			currentVersion = 2098FB252726B85000D07EDE /* Splan.xcdatamodel */;
+			path = Splan.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2098FB102726B85000D07EDE /* Project object */;
+}
