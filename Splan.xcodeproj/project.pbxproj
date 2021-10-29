@@ -3,19 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2008B6A9272ACB0100FBCA5D /* EditDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2008B6A8272ACB0100FBCA5D /* EditDetailsViewController.swift */; };
+		2008B6B2272ACB5200FBCA5D /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2008B6B0272ACB5200FBCA5D /* UserListTableViewCell.swift */; };
+		2008B6B3272ACB5200FBCA5D /* UserListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2008B6B1272ACB5200FBCA5D /* UserListTableViewCell.xib */; };
+		2074C79927283CBB004A9BCA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2074C79827283CBB004A9BCA /* LoginViewController.swift */; };
+		2074C7A127283D05004A9BCA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2074C7A027283D05004A9BCA /* RegisterViewController.swift */; };
+		2074C7A627283D16004A9BCA /* GetOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2074C7A527283D16004A9BCA /* GetOTPViewController.swift */; };
+		2074C7AB27283D27004A9BCA /* VerifyOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2074C7AA27283D27004A9BCA /* VerifyOTPViewController.swift */; };
+		2075EAA7272A9CAF00079DB6 /* MyPlanDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2075EAA6272A9CAF00079DB6 /* MyPlanDetailsViewController.swift */; };
+		2075EAB1272A9E6000079DB6 /* InvitedUsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2075EAAF272A9E6000079DB6 /* InvitedUsersTableViewCell.swift */; };
+		2075EAB2272A9E6000079DB6 /* InvitedUsersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2075EAB0272A9E6000079DB6 /* InvitedUsersTableViewCell.xib */; };
+		2085DB9C27297092001F5E7A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085DB9A27297092001F5E7A /* HomeViewController.swift */; };
+		2085DBA62729712A001F5E7A /* EventPlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085DBA42729712A001F5E7A /* EventPlaceTableViewCell.swift */; };
+		2085DBA72729712A001F5E7A /* EventPlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2085DBA52729712A001F5E7A /* EventPlaceTableViewCell.xib */; };
 		2098FB1C2726B85000D07EDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2098FB1B2726B85000D07EDE /* AppDelegate.swift */; };
 		2098FB1E2726B85000D07EDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2098FB1D2726B85000D07EDE /* SceneDelegate.swift */; };
-		2098FB202726B85000D07EDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2098FB1F2726B85000D07EDE /* ViewController.swift */; };
+		2098FB202726B85000D07EDE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2098FB1F2726B85000D07EDE /* BaseViewController.swift */; };
 		2098FB232726B85000D07EDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2098FB212726B85000D07EDE /* Main.storyboard */; };
 		2098FB262726B85000D07EDE /* Splan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2098FB242726B85000D07EDE /* Splan.xcdatamodeld */; };
 		2098FB282726B85900D07EDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2098FB272726B85900D07EDE /* Assets.xcassets */; };
 		2098FB2B2726B85900D07EDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2098FB292726B85900D07EDE /* LaunchScreen.storyboard */; };
 		2098FB362726B85A00D07EDE /* SplanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2098FB352726B85A00D07EDE /* SplanTests.swift */; };
 		2098FB412726B85A00D07EDE /* SplanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2098FB402726B85A00D07EDE /* SplanUITests.swift */; };
+		20D5DA542726CEAD0078A4CC /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20D5DA4E2726CEAC0078A4CC /* Poppins-Bold.ttf */; };
+		20D5DA552726CEAD0078A4CC /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20D5DA4F2726CEAC0078A4CC /* Poppins-Regular.ttf */; };
+		20D5DA562726CEAD0078A4CC /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20D5DA502726CEAC0078A4CC /* Poppins-ExtraBold.ttf */; };
+		20D5DA572726CEAD0078A4CC /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20D5DA512726CEAD0078A4CC /* Poppins-SemiBold.ttf */; };
+		20D5DA582726CEAD0078A4CC /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20D5DA522726CEAD0078A4CC /* Poppins-Black.ttf */; };
+		20D5DA592726CEAD0078A4CC /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20D5DA532726CEAD0078A4CC /* Poppins-Medium.ttf */; };
+		20D5DA772726D2A20078A4CC /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5DA702726D2A20078A4CC /* constant.swift */; };
+		20D5DA782726D2A20078A4CC /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5DA712726D2A20078A4CC /* UserDefault.swift */; };
+		20D5DA792726D2A20078A4CC /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5DA722726D2A20078A4CC /* ConnectionManager.swift */; };
+		20D5DA7A2726D2A20078A4CC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5DA732726D2A20078A4CC /* Reachability.swift */; };
+		20D5DA7B2726D2A20078A4CC /* IBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5DA742726D2A20078A4CC /* IBDesignable.swift */; };
+		20D5DA7D2726D2A20078A4CC /* AlertMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5DA762726D2A20078A4CC /* AlertMessages.swift */; };
+		20D5DA832726D2AC0078A4CC /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5DA822726D2AC0078A4CC /* Services.swift */; };
+		20D5DA892726D3050078A4CC /* NoInternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5DA882726D3040078A4CC /* NoInternetViewController.swift */; };
+		73CAD2E9B306CB27B7974445 /* Pods_SplanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038C6C2FD20FF88FC8E5EFFE /* Pods_SplanTests.framework */; };
+		8F473F91F5536DADE13D4FBE /* Pods_Splan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A7885ACC03DE4868B470BE /* Pods_Splan.framework */; };
+		BF5B26D6C8D0EB95F5FAEDD3 /* Pods_Splan_SplanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C71CDD68EF73C20F3D805A /* Pods_Splan_SplanUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +66,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		038C6C2FD20FF88FC8E5EFFE /* Pods_SplanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09C71CDD68EF73C20F3D805A /* Pods_Splan_SplanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Splan_SplanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2008B6A8272ACB0100FBCA5D /* EditDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDetailsViewController.swift; sourceTree = "<group>"; };
+		2008B6B0272ACB5200FBCA5D /* UserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
+		2008B6B1272ACB5200FBCA5D /* UserListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListTableViewCell.xib; sourceTree = "<group>"; };
+		200AD7F10F6CC1ED3A9A8735 /* Pods-Splan-SplanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Splan-SplanUITests.debug.xcconfig"; path = "Target Support Files/Pods-Splan-SplanUITests/Pods-Splan-SplanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2074C79827283CBB004A9BCA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2074C7A027283D05004A9BCA /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2074C7A527283D16004A9BCA /* GetOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOTPViewController.swift; sourceTree = "<group>"; };
+		2074C7AA27283D27004A9BCA /* VerifyOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOTPViewController.swift; sourceTree = "<group>"; };
+		2075EAA6272A9CAF00079DB6 /* MyPlanDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlanDetailsViewController.swift; sourceTree = "<group>"; };
+		2075EAAF272A9E6000079DB6 /* InvitedUsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitedUsersTableViewCell.swift; sourceTree = "<group>"; };
+		2075EAB0272A9E6000079DB6 /* InvitedUsersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InvitedUsersTableViewCell.xib; sourceTree = "<group>"; };
+		2085DB9A27297092001F5E7A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2085DBA42729712A001F5E7A /* EventPlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPlaceTableViewCell.swift; sourceTree = "<group>"; };
+		2085DBA52729712A001F5E7A /* EventPlaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventPlaceTableViewCell.xib; sourceTree = "<group>"; };
 		2098FB182726B85000D07EDE /* Splan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2098FB1B2726B85000D07EDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2098FB1D2726B85000D07EDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2098FB1F2726B85000D07EDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2098FB1F2726B85000D07EDE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2098FB222726B85000D07EDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2098FB252726B85000D07EDE /* Splan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Splan.xcdatamodel; sourceTree = "<group>"; };
 		2098FB272726B85900D07EDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +97,26 @@
 		2098FB3C2726B85A00D07EDE /* SplanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2098FB402726B85A00D07EDE /* SplanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplanUITests.swift; sourceTree = "<group>"; };
 		2098FB422726B85A00D07EDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20D5DA4E2726CEAC0078A4CC /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		20D5DA4F2726CEAC0078A4CC /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		20D5DA502726CEAC0078A4CC /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		20D5DA512726CEAD0078A4CC /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		20D5DA522726CEAD0078A4CC /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		20D5DA532726CEAD0078A4CC /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		20D5DA702726D2A20078A4CC /* constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
+		20D5DA712726D2A20078A4CC /* UserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		20D5DA722726D2A20078A4CC /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		20D5DA732726D2A20078A4CC /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		20D5DA742726D2A20078A4CC /* IBDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBDesignable.swift; sourceTree = "<group>"; };
+		20D5DA762726D2A20078A4CC /* AlertMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessages.swift; sourceTree = "<group>"; };
+		20D5DA822726D2AC0078A4CC /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		20D5DA882726D3040078A4CC /* NoInternetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetViewController.swift; sourceTree = "<group>"; };
+		20D764151F1076C14E0EA74E /* Pods-Splan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Splan.debug.xcconfig"; path = "Target Support Files/Pods-Splan/Pods-Splan.debug.xcconfig"; sourceTree = "<group>"; };
+		6D6326E7A1E3714735A3EF3B /* Pods-SplanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplanTests.release.xcconfig"; path = "Target Support Files/Pods-SplanTests/Pods-SplanTests.release.xcconfig"; sourceTree = "<group>"; };
+		A1A7885ACC03DE4868B470BE /* Pods_Splan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Splan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4EAC2E3E717D55200DBD10F /* Pods-Splan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Splan.release.xcconfig"; path = "Target Support Files/Pods-Splan/Pods-Splan.release.xcconfig"; sourceTree = "<group>"; };
+		D083DCFB00B57A41731158B2 /* Pods-Splan-SplanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Splan-SplanUITests.release.xcconfig"; path = "Target Support Files/Pods-Splan-SplanUITests/Pods-Splan-SplanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DE780A62765D0F50C4DFADBE /* Pods-SplanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplanTests.debug.xcconfig"; path = "Target Support Files/Pods-SplanTests/Pods-SplanTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F473F91F5536DADE13D4FBE /* Pods_Splan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73CAD2E9B306CB27B7974445 /* Pods_SplanTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +140,68 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF5B26D6C8D0EB95F5FAEDD3 /* Pods_Splan_SplanUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2008B6A7272ACAD900FBCA5D /* Edit Details Page */ = {
+			isa = PBXGroup;
+			children = (
+				2008B6A8272ACB0100FBCA5D /* EditDetailsViewController.swift */,
+			);
+			path = "Edit Details Page";
+			sourceTree = "<group>";
+		};
+		2074C79627283C82004A9BCA /* Login Page */ = {
+			isa = PBXGroup;
+			children = (
+				2074C79827283CBB004A9BCA /* LoginViewController.swift */,
+			);
+			path = "Login Page";
+			sourceTree = "<group>";
+		};
+		2074C79727283C8D004A9BCA /* Sign up Page */ = {
+			isa = PBXGroup;
+			children = (
+				2074C7A027283D05004A9BCA /* RegisterViewController.swift */,
+				2074C7A527283D16004A9BCA /* GetOTPViewController.swift */,
+				2074C7AA27283D27004A9BCA /* VerifyOTPViewController.swift */,
+			);
+			path = "Sign up Page";
+			sourceTree = "<group>";
+		};
+		2075EAA5272A9C4200079DB6 /* My Plan Details Page */ = {
+			isa = PBXGroup;
+			children = (
+				2075EAA6272A9CAF00079DB6 /* MyPlanDetailsViewController.swift */,
+			);
+			path = "My Plan Details Page";
+			sourceTree = "<group>";
+		};
+		2075EAAE272A9E1700079DB6 /* Common Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2085DBA42729712A001F5E7A /* EventPlaceTableViewCell.swift */,
+				2085DBA52729712A001F5E7A /* EventPlaceTableViewCell.xib */,
+				2075EAAF272A9E6000079DB6 /* InvitedUsersTableViewCell.swift */,
+				2075EAB0272A9E6000079DB6 /* InvitedUsersTableViewCell.xib */,
+				2008B6B0272ACB5200FBCA5D /* UserListTableViewCell.swift */,
+				2008B6B1272ACB5200FBCA5D /* UserListTableViewCell.xib */,
+			);
+			path = "Common Cell";
+			sourceTree = "<group>";
+		};
+		2085DB962729704B001F5E7A /* Home Page */ = {
+			isa = PBXGroup;
+			children = (
+				2085DB9A27297092001F5E7A /* HomeViewController.swift */,
+			);
+			path = "Home Page";
+			sourceTree = "<group>";
+		};
 		2098FB0F2726B85000D07EDE = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +209,8 @@
 				2098FB342726B85A00D07EDE /* SplanTests */,
 				2098FB3F2726B85A00D07EDE /* SplanUITests */,
 				2098FB192726B85000D07EDE /* Products */,
+				938D978A6774A4759B12C2DD /* Pods */,
+				4F7EC64394A9D1CB21A96F13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +227,15 @@
 		2098FB1A2726B85000D07EDE /* Splan */ = {
 			isa = PBXGroup;
 			children = (
-				2098FB1B2726B85000D07EDE /* AppDelegate.swift */,
-				2098FB1D2726B85000D07EDE /* SceneDelegate.swift */,
-				2098FB1F2726B85000D07EDE /* ViewController.swift */,
-				2098FB212726B85000D07EDE /* Main.storyboard */,
+				20D5DA812726D2AC0078A4CC /* Service Call */,
+				20D5DA6F2726D2A20078A4CC /* Constant */,
+				20D5DA4D2726CD550078A4CC /* Font */,
+				20C421492726BB8A0023FA23 /* CoreData */,
+				20C421482726BB810023FA23 /* Views */,
+				20C421472726BB740023FA23 /* Controllers */,
+				20C421462726BB5E0023FA23 /* Delegates */,
 				2098FB272726B85900D07EDE /* Assets.xcassets */,
-				2098FB292726B85900D07EDE /* LaunchScreen.storyboard */,
 				2098FB2C2726B85A00D07EDE /* Info.plist */,
-				2098FB242726B85000D07EDE /* Splan.xcdatamodeld */,
 			);
 			path = Splan;
 			sourceTree = "<group>";
@@ -131,6 +258,120 @@
 			path = SplanUITests;
 			sourceTree = "<group>";
 		};
+		20C421462726BB5E0023FA23 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				2098FB1B2726B85000D07EDE /* AppDelegate.swift */,
+				2098FB1D2726B85000D07EDE /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		20C421472726BB740023FA23 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2008B6A7272ACAD900FBCA5D /* Edit Details Page */,
+				2075EAAE272A9E1700079DB6 /* Common Cell */,
+				2075EAA5272A9C4200079DB6 /* My Plan Details Page */,
+				2085DB962729704B001F5E7A /* Home Page */,
+				2074C79727283C8D004A9BCA /* Sign up Page */,
+				2074C79627283C82004A9BCA /* Login Page */,
+				20D5DA902726E6F90078A4CC /* BaseView */,
+				20D5DA872726D3040078A4CC /* No Internet */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		20C421482726BB810023FA23 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2098FB212726B85000D07EDE /* Main.storyboard */,
+				2098FB292726B85900D07EDE /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		20C421492726BB8A0023FA23 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2098FB242726B85000D07EDE /* Splan.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		20D5DA4D2726CD550078A4CC /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				20D5DA522726CEAD0078A4CC /* Poppins-Black.ttf */,
+				20D5DA4E2726CEAC0078A4CC /* Poppins-Bold.ttf */,
+				20D5DA502726CEAC0078A4CC /* Poppins-ExtraBold.ttf */,
+				20D5DA532726CEAD0078A4CC /* Poppins-Medium.ttf */,
+				20D5DA4F2726CEAC0078A4CC /* Poppins-Regular.ttf */,
+				20D5DA512726CEAD0078A4CC /* Poppins-SemiBold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		20D5DA6F2726D2A20078A4CC /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				20D5DA702726D2A20078A4CC /* constant.swift */,
+				20D5DA712726D2A20078A4CC /* UserDefault.swift */,
+				20D5DA742726D2A20078A4CC /* IBDesignable.swift */,
+				20D5DA762726D2A20078A4CC /* AlertMessages.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		20D5DA812726D2AC0078A4CC /* Service Call */ = {
+			isa = PBXGroup;
+			children = (
+				20D5DA822726D2AC0078A4CC /* Services.swift */,
+			);
+			path = "Service Call";
+			sourceTree = "<group>";
+		};
+		20D5DA872726D3040078A4CC /* No Internet */ = {
+			isa = PBXGroup;
+			children = (
+				20D5DA722726D2A20078A4CC /* ConnectionManager.swift */,
+				20D5DA732726D2A20078A4CC /* Reachability.swift */,
+				20D5DA882726D3040078A4CC /* NoInternetViewController.swift */,
+			);
+			path = "No Internet";
+			sourceTree = "<group>";
+		};
+		20D5DA902726E6F90078A4CC /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				2098FB1F2726B85000D07EDE /* BaseViewController.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		4F7EC64394A9D1CB21A96F13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1A7885ACC03DE4868B470BE /* Pods_Splan.framework */,
+				09C71CDD68EF73C20F3D805A /* Pods_Splan_SplanUITests.framework */,
+				038C6C2FD20FF88FC8E5EFFE /* Pods_SplanTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		938D978A6774A4759B12C2DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20D764151F1076C14E0EA74E /* Pods-Splan.debug.xcconfig */,
+				B4EAC2E3E717D55200DBD10F /* Pods-Splan.release.xcconfig */,
+				200AD7F10F6CC1ED3A9A8735 /* Pods-Splan-SplanUITests.debug.xcconfig */,
+				D083DCFB00B57A41731158B2 /* Pods-Splan-SplanUITests.release.xcconfig */,
+				DE780A62765D0F50C4DFADBE /* Pods-SplanTests.debug.xcconfig */,
+				6D6326E7A1E3714735A3EF3B /* Pods-SplanTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +379,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2098FB452726B85A00D07EDE /* Build configuration list for PBXNativeTarget "Splan" */;
 			buildPhases = (
+				DB8FB4DEC3F53D08223CE2E1 /* [CP] Check Pods Manifest.lock */,
 				2098FB142726B85000D07EDE /* Sources */,
 				2098FB152726B85000D07EDE /* Frameworks */,
 				2098FB162726B85000D07EDE /* Resources */,
+				FCE5DC8D1B4D500DBCB68DEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +398,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2098FB482726B85A00D07EDE /* Build configuration list for PBXNativeTarget "SplanTests" */;
 			buildPhases = (
+				FB6741D973152904562829A3 /* [CP] Check Pods Manifest.lock */,
 				2098FB2D2726B85A00D07EDE /* Sources */,
 				2098FB2E2726B85A00D07EDE /* Frameworks */,
 				2098FB2F2726B85A00D07EDE /* Resources */,
@@ -173,9 +417,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2098FB4B2726B85A00D07EDE /* Build configuration list for PBXNativeTarget "SplanUITests" */;
 			buildPhases = (
+				5FE050042FD2AE85B4C21CBD /* [CP] Check Pods Manifest.lock */,
 				2098FB382726B85A00D07EDE /* Sources */,
 				2098FB392726B85A00D07EDE /* Frameworks */,
 				2098FB3A2726B85A00D07EDE /* Resources */,
+				3410C454611712653C828762 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,9 +480,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D5DA582726CEAD0078A4CC /* Poppins-Black.ttf in Resources */,
 				2098FB2B2726B85900D07EDE /* LaunchScreen.storyboard in Resources */,
+				2075EAB2272A9E6000079DB6 /* InvitedUsersTableViewCell.xib in Resources */,
+				20D5DA572726CEAD0078A4CC /* Poppins-SemiBold.ttf in Resources */,
 				2098FB282726B85900D07EDE /* Assets.xcassets in Resources */,
+				2085DBA72729712A001F5E7A /* EventPlaceTableViewCell.xib in Resources */,
 				2098FB232726B85000D07EDE /* Main.storyboard in Resources */,
+				20D5DA542726CEAD0078A4CC /* Poppins-Bold.ttf in Resources */,
+				2008B6B3272ACB5200FBCA5D /* UserListTableViewCell.xib in Resources */,
+				20D5DA592726CEAD0078A4CC /* Poppins-Medium.ttf in Resources */,
+				20D5DA562726CEAD0078A4CC /* Poppins-ExtraBold.ttf in Resources */,
+				20D5DA552726CEAD0078A4CC /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,15 +511,136 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3410C454611712653C828762 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Splan-SplanUITests/Pods-Splan-SplanUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Splan-SplanUITests/Pods-Splan-SplanUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Splan-SplanUITests/Pods-Splan-SplanUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FE050042FD2AE85B4C21CBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Splan-SplanUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB8FB4DEC3F53D08223CE2E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Splan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB6741D973152904562829A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SplanTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCE5DC8D1B4D500DBCB68DEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Splan/Pods-Splan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Splan/Pods-Splan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Splan/Pods-Splan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2098FB142726B85000D07EDE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D5DA7D2726D2A20078A4CC /* AlertMessages.swift in Sources */,
+				2074C7A627283D16004A9BCA /* GetOTPViewController.swift in Sources */,
+				20D5DA832726D2AC0078A4CC /* Services.swift in Sources */,
+				2085DB9C27297092001F5E7A /* HomeViewController.swift in Sources */,
 				2098FB262726B85000D07EDE /* Splan.xcdatamodeld in Sources */,
-				2098FB202726B85000D07EDE /* ViewController.swift in Sources */,
+				2098FB202726B85000D07EDE /* BaseViewController.swift in Sources */,
+				20D5DA782726D2A20078A4CC /* UserDefault.swift in Sources */,
+				20D5DA792726D2A20078A4CC /* ConnectionManager.swift in Sources */,
+				20D5DA892726D3050078A4CC /* NoInternetViewController.swift in Sources */,
+				20D5DA772726D2A20078A4CC /* constant.swift in Sources */,
+				2075EAB1272A9E6000079DB6 /* InvitedUsersTableViewCell.swift in Sources */,
+				2085DBA62729712A001F5E7A /* EventPlaceTableViewCell.swift in Sources */,
+				20D5DA7B2726D2A20078A4CC /* IBDesignable.swift in Sources */,
+				2074C7A127283D05004A9BCA /* RegisterViewController.swift in Sources */,
+				2008B6B2272ACB5200FBCA5D /* UserListTableViewCell.swift in Sources */,
 				2098FB1C2726B85000D07EDE /* AppDelegate.swift in Sources */,
+				20D5DA7A2726D2A20078A4CC /* Reachability.swift in Sources */,
+				2074C79927283CBB004A9BCA /* LoginViewController.swift in Sources */,
 				2098FB1E2726B85000D07EDE /* SceneDelegate.swift in Sources */,
+				2075EAA7272A9CAF00079DB6 /* MyPlanDetailsViewController.swift in Sources */,
+				2074C7AB27283D27004A9BCA /* VerifyOTPViewController.swift in Sources */,
+				2008B6A9272ACB0100FBCA5D /* EditDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,44 +813,51 @@
 		};
 		2098FB462726B85A00D07EDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20D764151F1076C14E0EA74E /* Pods-Splan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 79G7F2QQ57;
 				INFOPLIST_FILE = Splan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.webguru-india.com.Splan";
+				PRODUCT_BUNDLE_IDENTIFIER = com.splan.customer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		2098FB472726B85A00D07EDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4EAC2E3E717D55200DBD10F /* Pods-Splan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 79G7F2QQ57;
 				INFOPLIST_FILE = Splan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.webguru-india.com.Splan";
+				PRODUCT_BUNDLE_IDENTIFIER = com.splan.customer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		2098FB492726B85A00D07EDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE780A62765D0F50C4DFADBE /* Pods-SplanTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +880,7 @@
 		};
 		2098FB4A2726B85A00D07EDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D6326E7A1E3714735A3EF3B /* Pods-SplanTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +903,7 @@
 		};
 		2098FB4C2726B85A00D07EDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 200AD7F10F6CC1ED3A9A8735 /* Pods-Splan-SplanUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +924,7 @@
 		};
 		2098FB4D2726B85A00D07EDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D083DCFB00B57A41731158B2 /* Pods-Splan-SplanUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

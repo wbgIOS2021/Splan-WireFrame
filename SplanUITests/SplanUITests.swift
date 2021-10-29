@@ -2,7 +2,7 @@
 //  SplanUITests.swift
 //  SplanUITests
 //
-//  Created by Satyam Kumar on 25/10/21.
+//  Created by Adarsh Raj on 25/10/21.
 //
 
 import XCTest
