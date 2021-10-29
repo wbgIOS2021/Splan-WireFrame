@@ -1619,6 +1619,68 @@
             <point key="canvasLocation" x="3423" y="50"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="4wj-fR-7SC">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="6aZ-20-bik">
+            <size key="intrinsicContentSize" width="205" height="34"/>
+        </designable>
+        <designable name="8Lp-KA-T8g">
+            <size key="intrinsicContentSize" width="88" height="36"/>
+        </designable>
+        <designable name="DIs-Ch-2F7">
+            <size key="intrinsicContentSize" width="156" height="36"/>
+        </designable>
+        <designable name="F59-mv-FLt">
+            <size key="intrinsicContentSize" width="182" height="34"/>
+        </designable>
+        <designable name="GLR-Ac-M6a">
+            <size key="intrinsicContentSize" width="85" height="36"/>
+        </designable>
+        <designable name="H3J-kM-grw">
+            <size key="intrinsicContentSize" width="365" height="176"/>
+        </designable>
+        <designable name="K2b-9x-qrL">
+            <size key="intrinsicContentSize" width="34" height="36"/>
+        </designable>
+        <designable name="Klg-7H-Yv8">
+            <size key="intrinsicContentSize" width="112" height="34"/>
+        </designable>
+        <designable name="WOY-nl-uDc">
+            <size key="intrinsicContentSize" width="81" height="30"/>
+        </designable>
+        <designable name="Wcy-B4-hTb">
+            <size key="intrinsicContentSize" width="80" height="30"/>
+        </designable>
+        <designable name="YL0-pu-Z59">
+            <size key="intrinsicContentSize" width="182" height="34"/>
+        </designable>
+        <designable name="apl-uQ-ykj">
+            <size key="intrinsicContentSize" width="125" height="33"/>
+        </designable>
+        <designable name="iTk-Im-Ei3">
+            <size key="intrinsicContentSize" width="30" height="31"/>
+        </designable>
+        <designable name="qjJ-GH-HbS">
+            <size key="intrinsicContentSize" width="146" height="33"/>
+        </designable>
+        <designable name="rFV-Ta-MzT">
+            <size key="intrinsicContentSize" width="65" height="36"/>
+        </designable>
+        <designable name="sIf-3g-dtl">
+            <size key="intrinsicContentSize" width="142.5" height="34"/>
+        </designable>
+        <designable name="vj7-k5-9f0">
+            <size key="intrinsicContentSize" width="142.5" height="34"/>
+        </designable>
+        <designable name="xHE-ea-2RP">
+            <size key="intrinsicContentSize" width="53" height="36"/>
+        </designable>
+        <designable name="xk3-dp-Cey">
+            <size key="intrinsicContentSize" width="144.5" height="34"/>
+        </designable>
+    </designables>
     <resources>
         <image name="app_logo" width="110" height="111"/>
         <image name="bell_icon" width="21" height="23"/>
