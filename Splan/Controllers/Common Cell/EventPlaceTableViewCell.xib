@@ -6,20 +6,21 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EventPlaceTableViewCell" rowHeight="349" id="KGk-i7-Jjw" customClass="EventPlaceTableViewCell" customModule="Splan" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="388" height="349"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EventPlaceTableViewCell" rowHeight="379" id="KGk-i7-Jjw" customClass="EventPlaceTableViewCell" customModule="Splan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="379"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="388" height="349"/>
+                <rect key="frame" x="0.0" y="0.0" width="388" height="379"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wke-gi-JYd" customClass="RoundView" customModule="Splan" customModuleProvider="target">
-                        <rect key="frame" x="15" y="15" width="358" height="319"/>
+                        <rect key="frame" x="15" y="15" width="358" height="349"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restrurant_icon" translatesAutoresizingMaskIntoConstraints="NO" id="gi6-Zm-YEh" customClass="RoundImage" customModule="Splan" customModuleProvider="target">
                                 <rect key="frame" x="10" y="10" width="338" height="180"/>
@@ -33,118 +34,219 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sher E Punjab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4E-Bd-KNi">
-                                <rect key="frame" x="10" y="205" width="123" height="16"/>
+                                <rect key="frame" x="10" y="205" width="253" height="21"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="qoF-3R-aqc">
-                                <rect key="frame" x="10" y="231" width="283" height="68"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bB5-Fb-ZLw">
+                                <rect key="frame" x="273" y="203" width="75" height="35"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWS-iv-whX">
-                                        <rect key="frame" x="0.0" y="0.0" width="283" height="17"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dg3-A0-0YV">
+                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                        <state key="normal" image="restaurant_menu_icon"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jH7-rc-lqN">
+                                        <rect key="frame" x="40" y="0.0" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="hxM-go-JoK"/>
+                                            <constraint firstAttribute="width" constant="35" id="vHj-MZ-6XV"/>
+                                        </constraints>
+                                        <state key="normal" image="call_icon"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="77J-cA-pVG" customClass="RoundView" customModule="Splan" customModuleProvider="target">
+                                <rect key="frame" x="238" y="20" width="100" height="22.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="gqD-bk-Qim">
+                                        <rect key="frame" x="3" y="5" width="94" height="12.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Meet Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWn-vn-VYK">
-                                                <rect key="frame" x="0.0" y="0.0" width="95" height="17"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="95" id="7yS-X4-aFx"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accepted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idj-8w-1Rq">
+                                                <rect key="frame" x="0.0" y="0.0" width="46" height="12.5"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="11"/>
                                                 <color key="textColor" name="ThemeColor_1"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5th October, 11:30am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jms-x7-U99">
-                                                <rect key="frame" x="95" y="0.0" width="188" height="17"/>
-                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JXy-6X-nuK">
-                                        <rect key="frame" x="0.0" y="17" width="283" height="17"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6S-jL-vXj">
-                                                <rect key="frame" x="0.0" y="0.0" width="70" height="17"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="70" id="iAg-cc-ub1"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
-                                                <color key="textColor" name="ThemeColor_1"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="151, Jessore Rd, Kolkata" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQp-ia-wgq">
-                                                <rect key="frame" x="70" y="0.0" width="213" height="17"/>
-                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VJZ-F6-ugf">
-                                        <rect key="frame" x="0.0" y="34" width="283" height="17"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="No. of Invitee:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQy-dx-Oz0">
-                                                <rect key="frame" x="0.0" y="0.0" width="110" height="17"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="110" id="ZwS-jg-nVQ"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
-                                                <color key="textColor" name="ThemeColor_1"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAd-f1-NTg">
-                                                <rect key="frame" x="110" y="0.0" width="173" height="17"/>
-                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9D-ER-dXN">
-                                        <rect key="frame" x="0.0" y="51" width="283" height="17"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxo-3B-D2q">
-                                                <rect key="frame" x="0.0" y="0.0" width="60" height="17"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="60" id="ux2-tw-HOJ"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
-                                                <color key="textColor" name="ThemeColor_1"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRw-yS-gRi">
-                                                <rect key="frame" x="60" y="0.0" width="223" height="17"/>
-                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by venue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLo-WD-G1e">
+                                                <rect key="frame" x="49" y="0.0" width="45" height="12.5"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="11"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jH7-rc-lqN">
-                                <rect key="frame" x="313" y="205.5" width="35" height="35"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="hxM-go-JoK"/>
-                                    <constraint firstAttribute="width" constant="35" id="vHj-MZ-6XV"/>
+                                    <constraint firstItem="gqD-bk-Qim" firstAttribute="centerY" secondItem="77J-cA-pVG" secondAttribute="centerY" id="DEM-H6-pM9"/>
+                                    <constraint firstAttribute="bottom" secondItem="gqD-bk-Qim" secondAttribute="bottom" constant="5" id="WzJ-aH-RMW"/>
+                                    <constraint firstItem="gqD-bk-Qim" firstAttribute="centerX" secondItem="77J-cA-pVG" secondAttribute="centerX" id="q2U-fx-WVC"/>
+                                    <constraint firstAttribute="width" constant="100" id="sD1-Sb-qfb"/>
+                                    <constraint firstItem="gqD-bk-Qim" firstAttribute="top" secondItem="77J-cA-pVG" secondAttribute="top" constant="5" id="yAc-fC-SAk"/>
                                 </constraints>
-                                <state key="normal" image="call_icon"/>
-                            </button>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWid">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iwu-JZ-LVc" customClass="RoundView" customModule="Splan" customModuleProvider="target">
+                                <rect key="frame" x="258" y="155" width="80" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹500 for one" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvY-KO-twz">
+                                        <rect key="frame" x="9.5" y="4" width="61.5" height="12.5"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="BDk-WI-MY8"/>
+                                    <constraint firstItem="EvY-KO-twz" firstAttribute="centerY" secondItem="Iwu-JZ-LVc" secondAttribute="centerY" id="WfY-LR-MYA"/>
+                                    <constraint firstAttribute="height" constant="20" id="ZHf-XE-vjv"/>
+                                    <constraint firstItem="EvY-KO-twz" firstAttribute="centerX" secondItem="Iwu-JZ-LVc" secondAttribute="centerX" id="yhe-qF-Mre"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWid">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chinese, Momos, Alcohol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnl-G0-rRC">
+                                <rect key="frame" x="10" y="230" width="253" height="13.5"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                <color key="textColor" name="ThemeColor_5"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="k1T-SO-gQ2">
+                                <rect key="frame" x="10" y="251.5" width="253" height="77.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="evK-LL-mac">
+                                        <rect key="frame" x="0.0" y="0.0" width="253" height="16.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Host : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycz-2I-6sa">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="16.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="CyG-cm-nKo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="14"/>
+                                                <color key="textColor" name="ThemeColor_1"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Biprajit Das" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUL-fy-NZX">
+                                                <rect key="frame" x="40" y="0.0" width="213" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="151, Jessore Rd, Kolkata" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQp-ia-wgq">
+                                        <rect key="frame" x="0.0" y="19.5" width="253" height="16"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 SEP 2021 at 11:00am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jms-x7-U99">
+                                        <rect key="frame" x="0.0" y="38.5" width="253" height="16"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Hi-n3-2lT">
+                                        <rect key="frame" x="0.0" y="57.5" width="253" height="20"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hJP-Ra-oaB">
+                                                <rect key="frame" x="0.0" y="2" width="93.5" height="16"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Bh-oj-7O8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="8" height="16"/>
+                                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                        <color key="textColor" name="ThemeColor_1"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnM-se-1jB">
+                                                        <rect key="frame" x="13" y="0.0" width="4" height="16"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="4" id="ycX-zO-BRj"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AC1-pJ-Lr9">
+                                                        <rect key="frame" x="22" y="0.0" width="8" height="16"/>
+                                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accepted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alz-jI-dpY">
+                                                        <rect key="frame" x="35" y="0.0" width="58.5" height="16"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="58.5" id="Uip-dj-lEP"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="hJP-Ra-oaB" firstAttribute="leading" secondItem="3Hi-n3-2lT" secondAttribute="leading" id="C2C-cg-roC"/>
+                                            <constraint firstAttribute="height" constant="20" id="PJt-pp-YXU"/>
+                                            <constraint firstItem="hJP-Ra-oaB" firstAttribute="centerY" secondItem="3Hi-n3-2lT" secondAttribute="centerY" id="xxT-aj-3qJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ydG-Z3-N9w">
+                                <rect key="frame" x="303" y="276" width="45" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6y-Uj-wvL" customClass="RoundButton" customModule="Splan" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                        <color key="backgroundColor" name="ThemeColor_2"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="XJU-CB-lsr"/>
+                                            <constraint firstAttribute="width" constant="45" id="tBt-Rw-G1k"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" image="chat_icon"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWid">
+                                                <real key="value" value="22"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" name="ThemeColor_3"/>
                         <constraints>
+                            <constraint firstItem="k1T-SO-gQ2" firstAttribute="trailing" secondItem="mnl-G0-rRC" secondAttribute="trailing" id="0Im-3a-WrV"/>
                             <constraint firstItem="gi6-Zm-YEh" firstAttribute="leading" secondItem="wke-gi-JYd" secondAttribute="leading" constant="10" id="1Iz-3i-g6G"/>
+                            <constraint firstItem="Iwu-JZ-LVc" firstAttribute="top" secondItem="gi6-Zm-YEh" secondAttribute="bottom" constant="-35" id="2LP-fH-Wc5"/>
+                            <constraint firstItem="ydG-Z3-N9w" firstAttribute="centerY" secondItem="k1T-SO-gQ2" secondAttribute="centerY" constant="8" id="2Vi-Kn-jfB"/>
+                            <constraint firstAttribute="trailing" secondItem="bB5-Fb-ZLw" secondAttribute="trailing" constant="10" id="36y-zK-nfZ"/>
                             <constraint firstItem="S4E-Bd-KNi" firstAttribute="leading" secondItem="gi6-Zm-YEh" secondAttribute="leading" id="71j-w2-2VP"/>
                             <constraint firstItem="S4E-Bd-KNi" firstAttribute="top" secondItem="gi6-Zm-YEh" secondAttribute="bottom" constant="15" id="73P-Fb-rK3"/>
-                            <constraint firstItem="jH7-rc-lqN" firstAttribute="leading" secondItem="qoF-3R-aqc" secondAttribute="trailing" constant="20" id="8AX-7b-F42"/>
+                            <constraint firstItem="Iwu-JZ-LVc" firstAttribute="trailing" secondItem="77J-cA-pVG" secondAttribute="trailing" id="Eep-yC-JJF"/>
+                            <constraint firstItem="mnl-G0-rRC" firstAttribute="trailing" secondItem="S4E-Bd-KNi" secondAttribute="trailing" id="G47-TW-TjO"/>
+                            <constraint firstItem="mnl-G0-rRC" firstAttribute="top" secondItem="S4E-Bd-KNi" secondAttribute="bottom" constant="4" id="NEh-T1-5Lu"/>
+                            <constraint firstItem="77J-cA-pVG" firstAttribute="top" secondItem="wke-gi-JYd" secondAttribute="top" constant="20" id="P1T-Rn-uAF"/>
                             <constraint firstAttribute="trailing" secondItem="gi6-Zm-YEh" secondAttribute="trailing" constant="10" id="RDD-wY-0vY"/>
+                            <constraint firstItem="mnl-G0-rRC" firstAttribute="leading" secondItem="S4E-Bd-KNi" secondAttribute="leading" id="Sh7-0y-t44"/>
                             <constraint firstItem="gi6-Zm-YEh" firstAttribute="top" secondItem="wke-gi-JYd" secondAttribute="top" constant="10" id="T9F-49-hyB"/>
-                            <constraint firstAttribute="trailing" secondItem="jH7-rc-lqN" secondAttribute="trailing" constant="10" id="gMW-dO-Uqf"/>
-                            <constraint firstItem="qoF-3R-aqc" firstAttribute="leading" secondItem="S4E-Bd-KNi" secondAttribute="leading" id="iPE-Ec-7gI"/>
-                            <constraint firstItem="qoF-3R-aqc" firstAttribute="top" secondItem="S4E-Bd-KNi" secondAttribute="bottom" constant="10" id="nGb-4u-eDF"/>
-                            <constraint firstAttribute="bottom" secondItem="qoF-3R-aqc" secondAttribute="bottom" constant="20" id="oTt-Jh-uHJ"/>
-                            <constraint firstItem="jH7-rc-lqN" firstAttribute="centerY" secondItem="S4E-Bd-KNi" secondAttribute="centerY" constant="10" id="oru-Qj-Sq1"/>
+                            <constraint firstItem="k1T-SO-gQ2" firstAttribute="top" secondItem="mnl-G0-rRC" secondAttribute="bottom" constant="8" id="TOP-f2-ImV"/>
+                            <constraint firstItem="bB5-Fb-ZLw" firstAttribute="centerY" secondItem="S4E-Bd-KNi" secondAttribute="centerY" constant="5" id="Vyo-rM-8YW"/>
+                            <constraint firstAttribute="bottom" secondItem="k1T-SO-gQ2" secondAttribute="bottom" constant="20" id="eca-OH-fxe"/>
+                            <constraint firstItem="ydG-Z3-N9w" firstAttribute="trailing" secondItem="bB5-Fb-ZLw" secondAttribute="trailing" id="gPm-wp-WNf"/>
+                            <constraint firstAttribute="trailing" secondItem="77J-cA-pVG" secondAttribute="trailing" constant="20" id="hyo-OW-fdq"/>
+                            <constraint firstItem="bB5-Fb-ZLw" firstAttribute="leading" secondItem="S4E-Bd-KNi" secondAttribute="trailing" constant="10" id="wrF-v2-Xnx"/>
+                            <constraint firstItem="k1T-SO-gQ2" firstAttribute="leading" secondItem="mnl-G0-rRC" secondAttribute="leading" id="yW7-7q-Scg"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="borderWid">
@@ -164,31 +266,56 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
-                <outlet property="call_btn" destination="jH7-rc-lqN" id="RjW-wh-ocP"/>
-                <outlet property="eventView" destination="wke-gi-JYd" id="Rmm-If-Sfp"/>
-                <outlet property="event_image" destination="gi6-Zm-YEh" id="EWO-7a-xvc"/>
-                <outlet property="event_meet_time" destination="Jms-x7-U99" id="20w-pr-pyJ"/>
-                <outlet property="event_place" destination="RQp-ia-wgq" id="IZS-eb-Xn8"/>
-                <outlet property="event_status" destination="CRw-yS-gRi" id="rvk-Uv-aej"/>
-                <outlet property="event_title" destination="S4E-Bd-KNi" id="QMe-mA-hY2"/>
-                <outlet property="no_of_invite" destination="PAd-f1-NTg" id="ism-l5-DJ8"/>
+                <outlet property="btn_1" destination="Dg3-A0-0YV" id="C8A-Q7-Bag"/>
+                <outlet property="btn_2" destination="jH7-rc-lqN" id="nUc-F2-Ya4"/>
+                <outlet property="btn_3" destination="h6y-Uj-wvL" id="74C-AC-mIC"/>
+                <outlet property="by_venue_View" destination="77J-cA-pVG" id="hSf-Kr-49x"/>
+                <outlet property="eventView" destination="wke-gi-JYd" id="XnN-AZ-cxL"/>
+                <outlet property="event_hosted_by" destination="lUL-fy-NZX" id="QTE-NB-B0Z"/>
+                <outlet property="event_image" destination="gi6-Zm-YEh" id="LxW-za-cBD"/>
+                <outlet property="event_image_height" destination="9OX-Pz-KpI" id="0FW-ly-efM"/>
+                <outlet property="event_meet_time" destination="Jms-x7-U99" id="WSN-gf-LCd"/>
+                <outlet property="event_place" destination="RQp-ia-wgq" id="0o1-ca-DS3"/>
+                <outlet property="event_status" destination="Idj-8w-1Rq" id="yc2-0l-5i0"/>
+                <outlet property="event_title" destination="S4E-Bd-KNi" id="Ttk-97-QHN"/>
+                <outlet property="host_stackview" destination="evK-LL-mac" id="iKc-PU-3Un"/>
+                <outlet property="price_for_one" destination="EvY-KO-twz" id="ffN-9L-qUT"/>
+                <outlet property="price_for_one_View" destination="Iwu-JZ-LVc" id="8aV-tB-2Rg"/>
+                <outlet property="restaurant_special" destination="mnl-G0-rRC" id="zQI-aU-1h3"/>
+                <outlet property="total_accepted" destination="0Bh-oj-7O8" id="4uR-Bq-NnA"/>
+                <outlet property="total_accepted_view" destination="3Hi-n3-2lT" id="YyS-VM-rys"/>
+                <outlet property="total_invited" destination="AC1-pJ-Lr9" id="iOJ-Mu-LUa"/>
             </connections>
-            <point key="canvasLocation" x="282.60869565217394" y="99.441964285714278"/>
+            <point key="canvasLocation" x="282.60869565217394" y="109.48660714285714"/>
         </tableViewCell>
     </objects>
     <designables>
         <designable name="gi6-Zm-YEh">
             <size key="intrinsicContentSize" width="365" height="176"/>
         </designable>
+        <designable name="h6y-Uj-wvL">
+            <size key="intrinsicContentSize" width="34" height="34"/>
+        </designable>
     </designables>
     <resources>
         <image name="call_icon" width="35" height="35"/>
+        <image name="chat_icon" width="34" height="34"/>
+        <image name="restaurant_menu_icon" width="35" height="35"/>
         <image name="restrurant_icon" width="365" height="176"/>
         <namedColor name="ThemeColor_1">
             <color red="0.96470588235294119" green="0.0039215686274509803" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="ThemeColor_2">
+            <color red="0.14117647058823529" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="ThemeColor_3">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="ThemeColor_5">
+            <color red="0.58431372549019611" green="0.58431372549019611" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

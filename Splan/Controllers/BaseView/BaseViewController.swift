@@ -27,9 +27,23 @@ extension UIViewController
     }
     func homePage()
     {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        let vc = storyboard?.instantiateViewController(withIdentifier: "SideMenuController") as! SideMenuController
         navigationController?.pushViewController(vc, animated: true)
-
+    }
+    
+//    @objc func openSideMenu()
+//    {
+//
+//        sideMenuController?.revealMenu()
+//        print("gvbv")
+//    }
+    func sideMenu() {
+        SideMenuController.preferences.basic.menuWidth = 300
+        SideMenuController.preferences.basic.position = .above
+        SideMenuController.preferences.basic.direction = .left
+        SideMenuController.preferences.basic.enablePanGesture = true
+        SideMenuController.preferences.basic.supportedOrientations = .portrait
+        SideMenuController.preferences.basic.shouldRespectLanguageDirection = true
     }
 }
 

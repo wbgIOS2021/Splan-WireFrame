@@ -96,14 +96,14 @@
     </objects>
     <designables>
         <designable name="7i8-Dy-WP0">
-            <size key="intrinsicContentSize" width="63" height="63"/>
+            <size key="intrinsicContentSize" width="122" height="122"/>
         </designable>
         <designable name="jGX-Wt-cZR">
             <size key="intrinsicContentSize" width="30" height="33"/>
         </designable>
     </designables>
     <resources>
-        <image name="user_icon-1" width="63" height="63"/>
+        <image name="user_icon-1" width="122" height="122"/>
         <namedColor name="ThemeColor_2">
             <color red="0.14117647058823529" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -18,11 +18,11 @@ class VerifyOTPViewController: UIViewController {
     @IBOutlet weak var verifyBtn: UIButton!
     @IBOutlet weak var otpTextField_5: UITextField!
     var otp_code:String = ""
-    
+    var isComeFromMyProfile = false
     override func viewDidLoad() {
         super.viewDidLoad()
         setupThings()
-        verifyBtn.dropShadow()
+        verifyBtn.dropShadowLight()
     }
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = true
@@ -110,6 +110,12 @@ extension VerifyOTPViewController
         }
         else if otp1 == false || otp2 == false || otp3 == false || otp4 == false || otp5 == false || otp6 == false{
             showSimpleAlert(title: "Error", message: "Invalid OTP", view: self)
+        }else if isComeFromMyProfile == true {
+            otp_code = "\(otpTextField_1.text!)" + "\(otpTextField_2.text!)" + "\(otpTextField_3.text!)" + "\(otpTextField_4.text!)" + "\(otpTextField_5.text!)" + "\(otpTextField_6.text!)"
+            
+//            let vc = storyboard?.instantiateViewController(withIdentifier: "MyProfileViewController") as! MyProfileViewController
+//            navigationController?.pushViewController(vc, animated: true)
+            self.backBtn()
         }else{
             otp_code = "\(otpTextField_1.text!)" + "\(otpTextField_2.text!)" + "\(otpTextField_3.text!)" + "\(otpTextField_4.text!)" + "\(otpTextField_5.text!)" + "\(otpTextField_6.text!)"
             

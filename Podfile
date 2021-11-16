@@ -20,4 +20,6 @@ target 'Splan' do
     pod 'IQKeyboardManagerSwift';
     pod 'SideMenuSwift';
     pod 'SDWebImage', '~> 4.0';
+    pod 'ImageSlideshow', '~> 1.9.0';
+
 end

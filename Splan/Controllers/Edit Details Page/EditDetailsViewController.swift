@@ -11,10 +11,16 @@ class EditDetailsViewController: UIViewController {
 
     
     
-    @IBOutlet weak var restaurantImage: RoundImage!
-    @IBOutlet weak var restaurantName: UILabel!
-    @IBOutlet weak var restaurantAddress: UILabel!
-    @IBOutlet weak var restaurantStatus: UILabel!
+    @IBOutlet weak var event_image: RoundImage!
+    @IBOutlet weak var event_title: UILabel!
+    @IBOutlet weak var event_place: UILabel!
+    @IBOutlet weak var event_meet_time: UILabel!
+    @IBOutlet weak var total_accepted: UILabel!
+    @IBOutlet weak var total_invited: UILabel!
+    @IBOutlet weak var restaurant_special: UILabel!
+    @IBOutlet weak var event_status: UILabel!
+    @IBOutlet weak var price_for_one: UILabel!
+    
     @IBOutlet weak var selectDateBtn: RoundButton!
     @IBOutlet weak var inviteFriendBtn: RoundButton!
     @IBOutlet weak var selectTimeBtn: RoundButton!
@@ -23,6 +29,12 @@ class EditDetailsViewController: UIViewController {
     @IBOutlet weak var submitPlanBtn: RoundButton!
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var invitationMessageTextField: UITextView!
+   
+    @IBOutlet weak var bannerCollection: UICollectionView!
+    @IBOutlet weak var bannerPageControl: UIPageControl!
+    var timer:Timer?
+    var currentCellIndex = 0
+    var bannerImageArray = ["user_icon-1","restrurant_icon","app_logo","no_image"]
     override func viewDidLoad() {
         super.viewDidLoad()
         cellRegister()
@@ -42,11 +54,15 @@ class EditDetailsViewController: UIViewController {
         
         //Adding Observer
         self.userListTableView.addObserver(self, forKeyPath: "contentSize", options: .new, context: nil)
+        
+        timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(autoSlide) , userInfo: nil, repeats: true)
+        bannerPageControl.numberOfPages = bannerImageArray.count
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         //Removing Observer
         self.userListTableView.removeObserver(self, forKeyPath: "contentSize")
+        timer?.invalidate()
     }
     //Calling Observer
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?){
@@ -65,7 +81,23 @@ class EditDetailsViewController: UIViewController {
         userListTableView.register(UINib(nibName: "UserListTableViewCell", bundle: nil), forCellReuseIdentifier: "UserListTableViewCell")
         
     }
-    
+    @objc func autoSlide()
+    {
+        if currentCellIndex < bannerImageArray.count - 1
+        {
+            currentCellIndex = currentCellIndex + 1
+        }else{
+            currentCellIndex = 0
+        }
+        bannerPageControl.currentPage = currentCellIndex
+        print("currentCellIndex",currentCellIndex)
+        UIView.animate(withDuration: 1.0, animations: {
+            [weak self] in
+            self?.bannerCollection.scrollToItem(at: IndexPath(item: self?.currentCellIndex ?? 0, section: 0), at: .right, animated: true)
+        })
+        bannerCollection.reloadData()
+        
+    }
     
     
 }
@@ -123,4 +155,27 @@ extension EditDetailsViewController: UITableViewDataSource
     }
     
     
+}
+extension EditDetailsViewController:UICollectionViewDataSource
+{
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return bannerImageArray.count
+        
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+            let cell = bannerCollection.dequeueReusableCell(withReuseIdentifier: "BannerImageCollectionViewCell", for: indexPath) as! BannerImageCollectionViewCell
+            cell.bannerImage.image = UIImage(named: bannerImageArray[currentCellIndex])
+            return cell
+        
+    }
+}
+extension EditDetailsViewController:UICollectionViewDelegateFlowLayout
+{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: bannerCollection.frame.width, height: bannerCollection.frame.height)
+        
+    }
 }

@@ -12,12 +12,16 @@ class MyPlanDetailsViewController: UIViewController {
     @IBOutlet weak var eventDetailsTableView: UITableView!
     @IBOutlet weak var eventDetailsTableViewHeight: NSLayoutConstraint!
     @IBOutlet weak var invitedUsersTableView: UITableView!
+    @IBOutlet weak var invitedUsersTableViewHeight: NSLayoutConstraint!
+
     @IBOutlet weak var chatBtn: UIButton!
     
     var bolValue:[Bool] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         cellRegister()
+      
+        
         chatBtn.roundShadow()
         for _ in 0..<6{
             self.bolValue.append(false)
@@ -29,11 +33,13 @@ class MyPlanDetailsViewController: UIViewController {
         
         //Adding Observer
         self.eventDetailsTableView.addObserver(self, forKeyPath: "contentSize", options: .new, context: nil)
+        self.invitedUsersTableView.addObserver(self, forKeyPath: "contentSize", options: .new, context: nil)
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         //Removing Observer
         self.eventDetailsTableView.removeObserver(self, forKeyPath: "contentSize")
+        self.invitedUsersTableView.removeObserver(self, forKeyPath: "contentSize")
     }
     //Calling Observer
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?){
@@ -42,6 +48,11 @@ class MyPlanDetailsViewController: UIViewController {
                 if let newvalue = change?[.newKey]{
                     let newsize  = newvalue as! CGSize
                     self.eventDetailsTableViewHeight.constant = newsize.height
+                }
+            }else if obj == self.invitedUsersTableView && keyPath == "contentSize" {
+                if let newvalue = change?[.newKey]{
+                    let newsize  = newvalue as! CGSize
+                    self.invitedUsersTableViewHeight.constant = newsize.height
                 }
             }
         }
@@ -59,7 +70,10 @@ class MyPlanDetailsViewController: UIViewController {
     }
     
     @IBAction func editBtnAction(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "EditDetailsViewController") as! EditDetailsViewController
+        navigationController?.pushViewController(vc, animated: true)
     }
+    
     @IBAction func chatBtnAction(_ sender: Any) {
     }
     
@@ -77,9 +91,12 @@ extension MyPlanDetailsViewController: UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if tableView == eventDetailsTableView{
             let cell = eventDetailsTableView.dequeueReusableCell(withIdentifier: "EventPlaceTableViewCell", for: indexPath) as! EventPlaceTableViewCell
+            cell.btn_1.isHidden = true
+            cell.btn_3.isHidden = true
             return cell
         }
         let cell = invitedUsersTableView.dequeueReusableCell(withIdentifier: "InvitedUsersTableViewCell", for: indexPath) as! InvitedUsersTableViewCell
+        
         if bolValue[indexPath.row]
         {
             cell.inviteUserView.layer.backgroundColor = light_black_color.cgColor
@@ -87,14 +104,14 @@ extension MyPlanDetailsViewController: UITableViewDataSource
             cell.userMobile.textColor = white_color
             cell.status.textColor = white_color
             cell.mobileIcon.image = UIImage(named:"phone_icon_3")
-            
+            cell.inviteUserView.dropShadowLight()
         }else{
             cell.inviteUserView.layer.backgroundColor = white_color.cgColor
             cell.userName.textColor = dark_black_color
             cell.userMobile.textColor = dark_black_color
             cell.status.textColor = dark_black_color
             cell.mobileIcon.image = UIImage(named:"phone_icon_2")
-            
+            cell.inviteUserView.dropShadow()
 
         }
         return cell

@@ -34,13 +34,29 @@ extension UIView
         layer.shadowRadius = 6
         layer.rasterizationScale = UIScreen.main.scale
         layer.shouldRasterize = true
-        //layer.cornerRadius = 20
+    }
+    func dropShadowLight() {
+        layer.shadowColor = UIColor.gray.cgColor
+        layer.shadowOffset = CGSize(width: -2, height: 5)
+        layer.masksToBounds = false
+        layer.shadowOpacity = 0.3
+        layer.shadowRadius = 4
+        layer.rasterizationScale = UIScreen.main.scale
+        layer.shouldRasterize = true
     }
     
     func roundShadow()
     {
         clipsToBounds = false
-        layer.shadowColor = UIColor.gray.cgColor
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOpacity = 0.5
+        layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
+        layer.shadowRadius = 5
+    }
+    func roundShadowLight()
+    {
+        clipsToBounds = false
+        layer.shadowColor = UIColor.white.cgColor
         layer.shadowOpacity = 0.5
         layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
         layer.shadowRadius = 5
@@ -158,5 +174,19 @@ extension UIColor {
             (a, r, g, b) = (255, 0, 0, 0)
         }
         self.init(red: CGFloat(r) / 255, green: CGFloat(g) / 255, blue: CGFloat(b) / 255, alpha: CGFloat(a) / 255)
+    }
+}
+
+
+extension UITextField {
+    func setLeftPaddingPoints(_ amount:CGFloat){
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))
+        self.leftView = paddingView
+        self.leftViewMode = .always
+    }
+    func setRightPaddingPoints(_ amount:CGFloat) {
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))
+        self.rightView = paddingView
+        self.rightViewMode = .always
     }
 }

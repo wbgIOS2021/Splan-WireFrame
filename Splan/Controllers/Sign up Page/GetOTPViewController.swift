@@ -14,7 +14,7 @@ class GetOTPViewController: UIViewController {
     @IBOutlet weak var mobileTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        getOtpBtn.dropShadow()
+        getOtpBtn.dropShadowLight()
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {

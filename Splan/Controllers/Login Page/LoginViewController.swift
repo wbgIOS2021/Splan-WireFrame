@@ -17,11 +17,18 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loginBtn.dropShadow()
+        loginBtn.dropShadowLight()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = true
+        //Status Bar
+        let topInset: CGFloat = UIApplication.shared.keyWindow?.safeAreaInsets.top ?? UIApplication.shared.statusBarFrame.size.height
+        let statusBarView = UIView(frame: CGRect(x: 0, y: 0, width:UIScreen.main.bounds.width, height: topInset))
+        
+        statusBarView.backgroundColor = dark_black_color
+        self.navigationController?.view.addSubview(statusBarView)
+        setNeedsStatusBarAppearanceUpdate()
     }
     
     

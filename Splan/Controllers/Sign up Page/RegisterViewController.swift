@@ -24,7 +24,7 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        signupBtn.dropShadow()
+        signupBtn.dropShadowLight()
     }
     
     override func viewWillAppear(_ animated: Bool) {

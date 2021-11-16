@@ -10,6 +10,15 @@
 		2008B6A9272ACB0100FBCA5D /* EditDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2008B6A8272ACB0100FBCA5D /* EditDetailsViewController.swift */; };
 		2008B6B2272ACB5200FBCA5D /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2008B6B0272ACB5200FBCA5D /* UserListTableViewCell.swift */; };
 		2008B6B3272ACB5200FBCA5D /* UserListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2008B6B1272ACB5200FBCA5D /* UserListTableViewCell.xib */; };
+		201C3F03273E8755006423B7 /* BannerImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201C3F02273E8755006423B7 /* BannerImageCollectionViewCell.swift */; };
+		2026164D272FFBCA00FF013A /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2026164C272FFBCA00FF013A /* MyProfileViewController.swift */; };
+		20424669273903970017C846 /* VenusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20424668273903970017C846 /* VenusViewController.swift */; };
+		2042466F273934100017C846 /* CreatePlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2042466E273934100017C846 /* CreatePlanViewController.swift */; };
+		205934E7273A497D002B86AC /* InviteFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205934E6273A497D002B86AC /* InviteFriendsViewController.swift */; };
+		205934EF273A928D002B86AC /* SelectContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205934EE273A928D002B86AC /* SelectContactViewController.swift */; };
+		205934F4273A92E5002B86AC /* ContactListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205934F3273A92E5002B86AC /* ContactListTableViewCell.swift */; };
+		2070A17C273504B7005FB3E7 /* DescriptionPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070A17B273504B7005FB3E7 /* DescriptionPageViewController.swift */; };
+		2070A18527353CB8005FB3E7 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070A18427353CB8005FB3E7 /* ContactUsViewController.swift */; };
 		2074C79927283CBB004A9BCA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2074C79827283CBB004A9BCA /* LoginViewController.swift */; };
 		2074C7A127283D05004A9BCA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2074C7A027283D05004A9BCA /* RegisterViewController.swift */; };
 		2074C7A627283D16004A9BCA /* GetOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2074C7A527283D16004A9BCA /* GetOTPViewController.swift */; };
@@ -20,6 +29,7 @@
 		2085DB9C27297092001F5E7A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085DB9A27297092001F5E7A /* HomeViewController.swift */; };
 		2085DBA62729712A001F5E7A /* EventPlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085DBA42729712A001F5E7A /* EventPlaceTableViewCell.swift */; };
 		2085DBA72729712A001F5E7A /* EventPlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2085DBA52729712A001F5E7A /* EventPlaceTableViewCell.xib */; };
+		208FAB2A27366C0A0063F056 /* InvitationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208FAB2927366C0A0063F056 /* InvitationDetailsViewController.swift */; };
 		2098FB1C2726B85000D07EDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2098FB1B2726B85000D07EDE /* AppDelegate.swift */; };
 		2098FB1E2726B85000D07EDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2098FB1D2726B85000D07EDE /* SceneDelegate.swift */; };
 		2098FB202726B85000D07EDE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2098FB1F2726B85000D07EDE /* BaseViewController.swift */; };
@@ -43,6 +53,9 @@
 		20D5DA7D2726D2A20078A4CC /* AlertMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5DA762726D2A20078A4CC /* AlertMessages.swift */; };
 		20D5DA832726D2AC0078A4CC /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5DA822726D2AC0078A4CC /* Services.swift */; };
 		20D5DA892726D3050078A4CC /* NoInternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5DA882726D3040078A4CC /* NoInternetViewController.swift */; };
+		20DB242C272BDEC000DEDEE2 /* SideMneuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB2429272BDEBF00DEDEE2 /* SideMneuTableViewCell.swift */; };
+		20DB242E272BDEC000DEDEE2 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB242B272BDEBF00DEDEE2 /* SideMenuViewController.swift */; };
+		20EA61392731387D001D8A21 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EA61382731387D001D8A21 /* EditProfileViewController.swift */; };
 		73CAD2E9B306CB27B7974445 /* Pods_SplanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038C6C2FD20FF88FC8E5EFFE /* Pods_SplanTests.framework */; };
 		8F473F91F5536DADE13D4FBE /* Pods_Splan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A7885ACC03DE4868B470BE /* Pods_Splan.framework */; };
 		BF5B26D6C8D0EB95F5FAEDD3 /* Pods_Splan_SplanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C71CDD68EF73C20F3D805A /* Pods_Splan_SplanUITests.framework */; };
@@ -72,6 +85,15 @@
 		2008B6B0272ACB5200FBCA5D /* UserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
 		2008B6B1272ACB5200FBCA5D /* UserListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListTableViewCell.xib; sourceTree = "<group>"; };
 		200AD7F10F6CC1ED3A9A8735 /* Pods-Splan-SplanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Splan-SplanUITests.debug.xcconfig"; path = "Target Support Files/Pods-Splan-SplanUITests/Pods-Splan-SplanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		201C3F02273E8755006423B7 /* BannerImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		2026164C272FFBCA00FF013A /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		20424668273903970017C846 /* VenusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenusViewController.swift; sourceTree = "<group>"; };
+		2042466E273934100017C846 /* CreatePlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlanViewController.swift; sourceTree = "<group>"; };
+		205934E6273A497D002B86AC /* InviteFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendsViewController.swift; sourceTree = "<group>"; };
+		205934EE273A928D002B86AC /* SelectContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectContactViewController.swift; sourceTree = "<group>"; };
+		205934F3273A92E5002B86AC /* ContactListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTableViewCell.swift; sourceTree = "<group>"; };
+		2070A17B273504B7005FB3E7 /* DescriptionPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionPageViewController.swift; sourceTree = "<group>"; };
+		2070A18427353CB8005FB3E7 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		2074C79827283CBB004A9BCA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2074C7A027283D05004A9BCA /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		2074C7A527283D16004A9BCA /* GetOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOTPViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +104,7 @@
 		2085DB9A27297092001F5E7A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2085DBA42729712A001F5E7A /* EventPlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPlaceTableViewCell.swift; sourceTree = "<group>"; };
 		2085DBA52729712A001F5E7A /* EventPlaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventPlaceTableViewCell.xib; sourceTree = "<group>"; };
+		208FAB2927366C0A0063F056 /* InvitationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationDetailsViewController.swift; sourceTree = "<group>"; };
 		2098FB182726B85000D07EDE /* Splan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2098FB1B2726B85000D07EDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2098FB1D2726B85000D07EDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +135,9 @@
 		20D5DA822726D2AC0078A4CC /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		20D5DA882726D3040078A4CC /* NoInternetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetViewController.swift; sourceTree = "<group>"; };
 		20D764151F1076C14E0EA74E /* Pods-Splan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Splan.debug.xcconfig"; path = "Target Support Files/Pods-Splan/Pods-Splan.debug.xcconfig"; sourceTree = "<group>"; };
+		20DB2429272BDEBF00DEDEE2 /* SideMneuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMneuTableViewCell.swift; sourceTree = "<group>"; };
+		20DB242B272BDEBF00DEDEE2 /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		20EA61382731387D001D8A21 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		6D6326E7A1E3714735A3EF3B /* Pods-SplanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplanTests.release.xcconfig"; path = "Target Support Files/Pods-SplanTests/Pods-SplanTests.release.xcconfig"; sourceTree = "<group>"; };
 		A1A7885ACC03DE4868B470BE /* Pods_Splan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Splan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4EAC2E3E717D55200DBD10F /* Pods-Splan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Splan.release.xcconfig"; path = "Target Support Files/Pods-Splan/Pods-Splan.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +179,58 @@
 				2008B6A8272ACB0100FBCA5D /* EditDetailsViewController.swift */,
 			);
 			path = "Edit Details Page";
+			sourceTree = "<group>";
+		};
+		2026164B272FFBA300FF013A /* My Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2026164C272FFBCA00FF013A /* MyProfileViewController.swift */,
+				20EA61382731387D001D8A21 /* EditProfileViewController.swift */,
+			);
+			path = "My Profile";
+			sourceTree = "<group>";
+		};
+		20424667273903780017C846 /* Venues Page */ = {
+			isa = PBXGroup;
+			children = (
+				20424668273903970017C846 /* VenusViewController.swift */,
+			);
+			path = "Venues Page";
+			sourceTree = "<group>";
+		};
+		2042466D273933F70017C846 /* Create Plan */ = {
+			isa = PBXGroup;
+			children = (
+				2042466E273934100017C846 /* CreatePlanViewController.swift */,
+				201C3F02273E8755006423B7 /* BannerImageCollectionViewCell.swift */,
+			);
+			path = "Create Plan";
+			sourceTree = "<group>";
+		};
+		205934E5273A493E002B86AC /* Invite Friends */ = {
+			isa = PBXGroup;
+			children = (
+				205934E6273A497D002B86AC /* InviteFriendsViewController.swift */,
+				205934EE273A928D002B86AC /* SelectContactViewController.swift */,
+				205934F3273A92E5002B86AC /* ContactListTableViewCell.swift */,
+			);
+			path = "Invite Friends";
+			sourceTree = "<group>";
+		};
+		2070A17A27350496005FB3E7 /* Description Page */ = {
+			isa = PBXGroup;
+			children = (
+				2070A17B273504B7005FB3E7 /* DescriptionPageViewController.swift */,
+			);
+			path = "Description Page";
+			sourceTree = "<group>";
+		};
+		2070A18327353C9D005FB3E7 /* Contact Us Page */ = {
+			isa = PBXGroup;
+			children = (
+				2070A18427353CB8005FB3E7 /* ContactUsViewController.swift */,
+			);
+			path = "Contact Us Page";
 			sourceTree = "<group>";
 		};
 		2074C79627283C82004A9BCA /* Login Page */ = {
@@ -200,6 +278,14 @@
 				2085DB9A27297092001F5E7A /* HomeViewController.swift */,
 			);
 			path = "Home Page";
+			sourceTree = "<group>";
+		};
+		208FAB2827366BE60063F056 /* Invitation Details */ = {
+			isa = PBXGroup;
+			children = (
+				208FAB2927366C0A0063F056 /* InvitationDetailsViewController.swift */,
+			);
+			path = "Invitation Details";
 			sourceTree = "<group>";
 		};
 		2098FB0F2726B85000D07EDE = {
@@ -270,6 +356,14 @@
 		20C421472726BB740023FA23 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				205934E5273A493E002B86AC /* Invite Friends */,
+				2042466D273933F70017C846 /* Create Plan */,
+				20424667273903780017C846 /* Venues Page */,
+				208FAB2827366BE60063F056 /* Invitation Details */,
+				2070A18327353C9D005FB3E7 /* Contact Us Page */,
+				2070A17A27350496005FB3E7 /* Description Page */,
+				2026164B272FFBA300FF013A /* My Profile */,
+				20DB2428272BDE9E00DEDEE2 /* Side Menu */,
 				2008B6A7272ACAD900FBCA5D /* Edit Details Page */,
 				2075EAAE272A9E1700079DB6 /* Common Cell */,
 				2075EAA5272A9C4200079DB6 /* My Plan Details Page */,
@@ -347,6 +441,15 @@
 				2098FB1F2726B85000D07EDE /* BaseViewController.swift */,
 			);
 			path = BaseView;
+			sourceTree = "<group>";
+		};
+		20DB2428272BDE9E00DEDEE2 /* Side Menu */ = {
+			isa = PBXGroup;
+			children = (
+				20DB242B272BDEBF00DEDEE2 /* SideMenuViewController.swift */,
+				20DB2429272BDEBF00DEDEE2 /* SideMneuTableViewCell.swift */,
+			);
+			path = "Side Menu";
 			sourceTree = "<group>";
 		};
 		4F7EC64394A9D1CB21A96F13 /* Frameworks */ = {
@@ -619,6 +722,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				201C3F03273E8755006423B7 /* BannerImageCollectionViewCell.swift in Sources */,
+				20EA61392731387D001D8A21 /* EditProfileViewController.swift in Sources */,
 				20D5DA7D2726D2A20078A4CC /* AlertMessages.swift in Sources */,
 				2074C7A627283D16004A9BCA /* GetOTPViewController.swift in Sources */,
 				20D5DA832726D2AC0078A4CC /* Services.swift in Sources */,
@@ -628,19 +733,30 @@
 				20D5DA782726D2A20078A4CC /* UserDefault.swift in Sources */,
 				20D5DA792726D2A20078A4CC /* ConnectionManager.swift in Sources */,
 				20D5DA892726D3050078A4CC /* NoInternetViewController.swift in Sources */,
+				20424669273903970017C846 /* VenusViewController.swift in Sources */,
+				20DB242C272BDEC000DEDEE2 /* SideMneuTableViewCell.swift in Sources */,
+				208FAB2A27366C0A0063F056 /* InvitationDetailsViewController.swift in Sources */,
 				20D5DA772726D2A20078A4CC /* constant.swift in Sources */,
 				2075EAB1272A9E6000079DB6 /* InvitedUsersTableViewCell.swift in Sources */,
 				2085DBA62729712A001F5E7A /* EventPlaceTableViewCell.swift in Sources */,
+				2042466F273934100017C846 /* CreatePlanViewController.swift in Sources */,
 				20D5DA7B2726D2A20078A4CC /* IBDesignable.swift in Sources */,
 				2074C7A127283D05004A9BCA /* RegisterViewController.swift in Sources */,
+				2026164D272FFBCA00FF013A /* MyProfileViewController.swift in Sources */,
 				2008B6B2272ACB5200FBCA5D /* UserListTableViewCell.swift in Sources */,
+				20DB242E272BDEC000DEDEE2 /* SideMenuViewController.swift in Sources */,
+				205934F4273A92E5002B86AC /* ContactListTableViewCell.swift in Sources */,
 				2098FB1C2726B85000D07EDE /* AppDelegate.swift in Sources */,
 				20D5DA7A2726D2A20078A4CC /* Reachability.swift in Sources */,
+				2070A17C273504B7005FB3E7 /* DescriptionPageViewController.swift in Sources */,
 				2074C79927283CBB004A9BCA /* LoginViewController.swift in Sources */,
+				2070A18527353CB8005FB3E7 /* ContactUsViewController.swift in Sources */,
 				2098FB1E2726B85000D07EDE /* SceneDelegate.swift in Sources */,
 				2075EAA7272A9CAF00079DB6 /* MyPlanDetailsViewController.swift in Sources */,
 				2074C7AB27283D27004A9BCA /* VerifyOTPViewController.swift in Sources */,
 				2008B6A9272ACB0100FBCA5D /* EditDetailsViewController.swift in Sources */,
+				205934EF273A928D002B86AC /* SelectContactViewController.swift in Sources */,
+				205934E7273A497D002B86AC /* InviteFriendsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
