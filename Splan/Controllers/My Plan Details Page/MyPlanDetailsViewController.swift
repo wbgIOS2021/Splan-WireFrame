@@ -91,7 +91,7 @@ extension MyPlanDetailsViewController: UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if tableView == eventDetailsTableView{
             let cell = eventDetailsTableView.dequeueReusableCell(withIdentifier: "EventPlaceTableViewCell", for: indexPath) as! EventPlaceTableViewCell
-            cell.btn_1.isHidden = true
+            //cell.btn_1.isHidden = true
             cell.btn_3.isHidden = true
             return cell
         }

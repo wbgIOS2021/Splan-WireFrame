@@ -91,14 +91,23 @@ class EditDetailsViewController: UIViewController {
         }
         bannerPageControl.currentPage = currentCellIndex
         print("currentCellIndex",currentCellIndex)
-        UIView.animate(withDuration: 1.0, animations: {
+        UIView.animate(withDuration: 10.0, animations: {
             [weak self] in
             self?.bannerCollection.scrollToItem(at: IndexPath(item: self?.currentCellIndex ?? 0, section: 0), at: .right, animated: true)
         })
         bannerCollection.reloadData()
         
     }
-    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+       let visibleRect = CGRect(origin: self.bannerCollection.contentOffset, size: self.bannerCollection.bounds.size)
+       let visiblePoint = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
+       if let visibleIndexPath = self.bannerCollection.indexPathForItem(at: visiblePoint) {
+                self.bannerPageControl.currentPage = visibleIndexPath.row
+                self.currentCellIndex = visibleIndexPath.row
+        
+       }
+        bannerCollection.reloadData()
+    }
     
 }
 

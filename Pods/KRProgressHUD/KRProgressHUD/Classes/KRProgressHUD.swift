@@ -36,14 +36,12 @@ public enum KRProgressHUDMaskType {
 public enum KRProgressHUDStyle {
     case white
     case black
-    case clear
     case custom(background: UIColor, text: UIColor, icon: UIColor?)
 
     var backgroundColor: UIColor {
         switch self {
         case .white: return .white
         case .black: return .black
-        case .clear: return .clear
         case let .custom(background, _, _): return background
         }
     }
@@ -52,7 +50,6 @@ public enum KRProgressHUDStyle {
         switch self {
         case .white: return .black
         case .black: return .white
-        case .clear: return .white
         case let .custom(_, text, _): return text
         }
     }
@@ -71,7 +68,7 @@ public final class KRProgressHUD {
 
     public class KRProgressHUDAppearance {
         /// Default style.
-        public var style = KRProgressHUDStyle.clear
+        public var style = KRProgressHUDStyle.white
         /// Default mask type.
         public var maskType = KRProgressHUDMaskType.black
         /// Default KRActivityIndicatorView colors

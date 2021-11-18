@@ -717,7 +717,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z0f-RM-Eja" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5839.130434782609" y="-198.21428571428569"/>
+            <point key="canvasLocation" x="6749.275362318841" y="-198.21428571428569"/>
         </scene>
         <!--No Internet View Controller-->
         <scene sceneID="e3K-cw-ajh">
@@ -3296,7 +3296,7 @@ Independence, KY 41051</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7GN-1C-crP">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Venues" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bTd-ME-kez" customClass="TextFieldDesign" customModule="Splan" customModuleProvider="target">
                                         <rect key="frame" x="20" y="30" width="256" height="50"/>
@@ -3320,7 +3320,7 @@ Independence, KY 41051</string>
                                         </constraints>
                                     </imageView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zi1-3T-fng">
-                                        <rect key="frame" x="5" y="90" width="404" height="664"/>
+                                        <rect key="frame" x="5" y="90" width="404" height="708"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="dataSource" destination="8l9-ep-cOm" id="Uo7-KU-ARM"/>
@@ -3336,14 +3336,14 @@ Independence, KY 41051</string>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="oB5-bC-aeV"/>
                                                 </constraints>
-                                                <state key="normal" image="filter_icon"/>
+                                                <state key="normal" image="map_icon"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWid">
                                                         <real key="value" value="8"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="sortBtn:" destination="8l9-ep-cOm" eventType="touchUpInside" id="tgV-T8-ybV"/>
+                                                    <action selector="customLocationActionBtn:" destination="8l9-ep-cOm" eventType="touchUpInside" id="lgs-JQ-ziQ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNm-fw-dQO" customClass="RoundButton" customModule="Splan" customModuleProvider="target">
@@ -3539,7 +3539,7 @@ Independence, KY 41051</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OFd-YN-TyO" customClass="RoundView" customModule="Splan" customModuleProvider="target">
-                                <rect key="frame" x="254" y="158" width="170" height="80"/>
+                                <rect key="frame" x="254" y="44" width="170" height="80"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xq6-sZ-x3b">
                                         <rect key="frame" x="20" y="17" width="107.5" height="46"/>
@@ -3608,7 +3608,7 @@ Independence, KY 41051</string>
                         <viewLayoutGuide key="safeArea" id="qBf-aS-eQ7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="OFd-YN-TyO" firstAttribute="top" secondItem="Nh8-lT-FJY" secondAttribute="bottom" constant="-10" id="B1g-VO-lug"/>
+                            <constraint firstItem="OFd-YN-TyO" firstAttribute="top" secondItem="Nh8-lT-FJY" secondAttribute="bottom" constant="-80" id="B1g-VO-lug"/>
                             <constraint firstItem="7GN-1C-crP" firstAttribute="leading" secondItem="qBf-aS-eQ7" secondAttribute="leading" id="U8d-u4-24b"/>
                             <constraint firstItem="qBf-aS-eQ7" firstAttribute="bottom" secondItem="7GN-1C-crP" secondAttribute="bottom" id="gd5-cn-zyz"/>
                             <constraint firstItem="qBf-aS-eQ7" firstAttribute="trailing" secondItem="7GN-1C-crP" secondAttribute="trailing" id="i4a-FZ-6Pa"/>
@@ -3622,7 +3622,11 @@ Independence, KY 41051</string>
                                 <action selector="backBtn:" destination="8l9-ep-cOm" id="NSh-u7-yW6"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="map_icon" id="lPu-uX-Rcn"/>
+                        <barButtonItem key="rightBarButtonItem" image="filter_icon" id="lPu-uX-Rcn">
+                            <connections>
+                                <action selector="sortBtn:" destination="8l9-ep-cOm" id="fz5-L4-POs"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="filterByBowling" destination="pdE-Sc-y7p" id="foX-hm-i48"/>
@@ -3640,7 +3644,130 @@ Independence, KY 41051</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rvs-ii-Zpi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4384.057971014493" y="-198.21428571428569"/>
+            <point key="canvasLocation" x="3581" y="-192"/>
+        </scene>
+        <!--Select Custom Location-->
+        <scene sceneID="h9i-kX-g76">
+            <objects>
+                <viewController storyboardIdentifier="CustomLocationViewController" id="gSI-3q-sXc" customClass="CustomLocationViewController" customModule="Splan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sQi-kp-YEf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F06-1k-F8T" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map_icon" translatesAutoresizingMaskIntoConstraints="NO" id="08v-o8-80y">
+                                <rect key="frame" x="193" y="430.5" width="28" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="jDD-7d-l59"/>
+                                    <constraint firstAttribute="width" constant="28" id="wO8-cn-fc1"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="328 2100 S, South Salt Lake, UT 84115..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tnv-mj-79X" customClass="TextFieldDesign" customModule="Splan" customModuleProvider="target">
+                                <rect key="frame" x="20" y="118" width="374" height="50"/>
+                                <color key="backgroundColor" name="ThemeColor_3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DKg-Ug-Hrp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cournerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxm-lM-BJS" customClass="RoundView" customModule="Splan" customModuleProvider="target">
+                                <rect key="frame" x="20" y="652" width="374" height="130"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location Name (Optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nyG-8O-jcW" customClass="TextFieldDesign" customModule="Splan" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="27" width="334" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Uzh-EY-fqb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cournerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="nyG-8O-jcW" firstAttribute="leading" secondItem="rxm-lM-BJS" secondAttribute="leading" constant="20" id="TfA-y8-58P"/>
+                                    <constraint firstAttribute="height" constant="130" id="c87-mX-Ddt"/>
+                                    <constraint firstItem="nyG-8O-jcW" firstAttribute="top" secondItem="rxm-lM-BJS" secondAttribute="top" constant="27" id="gGA-F9-3i1"/>
+                                    <constraint firstAttribute="trailing" secondItem="nyG-8O-jcW" secondAttribute="trailing" constant="20" id="npN-i0-St0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWid">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTC-WR-qkX" customClass="RoundButton" customModule="Splan" customModuleProvider="target">
+                                <rect key="frame" x="40" y="757" width="334" height="50"/>
+                                <color key="backgroundColor" name="ThemeColor_1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YZJ-s7-R9s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" name="ThemeColor_3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWid">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="continueBtn:" destination="gSI-3q-sXc" eventType="touchUpInside" id="f4l-LR-7iD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kaj-Sp-czU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zTC-WR-qkX" firstAttribute="bottom" secondItem="rxm-lM-BJS" secondAttribute="bottom" constant="25" id="36T-ry-ckx"/>
+                            <constraint firstItem="zTC-WR-qkX" firstAttribute="trailing" secondItem="nyG-8O-jcW" secondAttribute="trailing" id="6Yo-QC-YIj"/>
+                            <constraint firstItem="kaj-Sp-czU" firstAttribute="bottom" secondItem="F06-1k-F8T" secondAttribute="bottom" id="B5Z-IM-Bv1"/>
+                            <constraint firstItem="F06-1k-F8T" firstAttribute="leading" secondItem="kaj-Sp-czU" secondAttribute="leading" id="Bd4-e8-o83"/>
+                            <constraint firstItem="tnv-mj-79X" firstAttribute="trailing" secondItem="F06-1k-F8T" secondAttribute="trailing" constant="-20" id="IPb-UJ-MBR"/>
+                            <constraint firstItem="kaj-Sp-czU" firstAttribute="bottom" secondItem="rxm-lM-BJS" secondAttribute="bottom" constant="80" id="Q4T-Bx-IBo"/>
+                            <constraint firstItem="08v-o8-80y" firstAttribute="centerY" secondItem="sQi-kp-YEf" secondAttribute="centerY" id="dDn-NM-r5g"/>
+                            <constraint firstItem="rxm-lM-BJS" firstAttribute="leading" secondItem="tnv-mj-79X" secondAttribute="leading" id="evh-88-FwF"/>
+                            <constraint firstItem="tnv-mj-79X" firstAttribute="leading" secondItem="F06-1k-F8T" secondAttribute="leading" constant="20" id="kvW-qc-8Sf"/>
+                            <constraint firstItem="F06-1k-F8T" firstAttribute="top" secondItem="tnv-mj-79X" secondAttribute="bottom" constant="-80" id="lit-HU-o9d"/>
+                            <constraint firstItem="rxm-lM-BJS" firstAttribute="trailing" secondItem="tnv-mj-79X" secondAttribute="trailing" id="oiL-j7-ZZY"/>
+                            <constraint firstItem="zTC-WR-qkX" firstAttribute="leading" secondItem="nyG-8O-jcW" secondAttribute="leading" id="qD6-XN-1n0"/>
+                            <constraint firstItem="F06-1k-F8T" firstAttribute="top" secondItem="kaj-Sp-czU" secondAttribute="top" id="svI-Ao-r8a"/>
+                            <constraint firstItem="08v-o8-80y" firstAttribute="centerX" secondItem="sQi-kp-YEf" secondAttribute="centerX" id="wLU-cp-Sqe"/>
+                            <constraint firstItem="kaj-Sp-czU" firstAttribute="trailing" secondItem="F06-1k-F8T" secondAttribute="trailing" id="zw9-uc-axp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Select Custom Location" id="WWY-qD-4xX">
+                        <barButtonItem key="leftBarButtonItem" image="left_arrow_icon" id="Oim-vl-Alg">
+                            <connections>
+                                <action selector="backBtn:" destination="gSI-3q-sXc" id="cwj-fj-OXo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addressTextField" destination="tnv-mj-79X" id="hhT-Vo-m3Q"/>
+                        <outlet property="bottomview" destination="rxm-lM-BJS" id="bxo-1w-v9e"/>
+                        <outlet property="continueBtn" destination="zTC-WR-qkX" id="gPF-lI-Ioy"/>
+                        <outlet property="locationNameTextField" destination="nyG-8O-jcW" id="Btn-fA-Zaq"/>
+                        <outlet property="mapView" destination="F06-1k-F8T" id="to5-CA-Wia"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mEJ-I5-w2n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5250.7246376811599" y="-192.1875"/>
         </scene>
         <!--Create Plan-->
         <scene sceneID="fU5-8m-oCP">
@@ -3714,17 +3841,9 @@ Independence, KY 41051</string>
                                                             <outlet property="delegate" destination="OMc-Fj-wRO" id="Q5X-vz-1dh"/>
                                                         </connections>
                                                     </collectionView>
-                                                    <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2GS-wt-1Um" customClass="RoundView" customModule="Splan" customModuleProvider="target">
-                                                        <rect key="frame" x="10" y="10" width="364" height="180"/>
-                                                        <color key="backgroundColor" name="ThemeColor_2"/>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWid">
-                                                                <real key="value" value="10"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </view>
-                                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="xWV-Nv-Z57">
+                                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="xWV-Nv-Z57">
                                                         <rect key="frame" x="10" y="162.5" width="364" height="27.5"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="currentPageIndicatorTintColor" name="ThemeColor_1"/>
                                                     </pageControl>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Szw-hs-5bm" customClass="RoundView" customModule="Splan" customModuleProvider="target">
@@ -3850,8 +3969,6 @@ Independence, KY 41051</string>
                                                 </subviews>
                                                 <color key="backgroundColor" name="ThemeColor_3"/>
                                                 <constraints>
-                                                    <constraint firstItem="2GS-wt-1Um" firstAttribute="top" secondItem="lh5-g2-MX8" secondAttribute="top" id="1JH-Q9-XCb"/>
-                                                    <constraint firstItem="xWV-Nv-Z57" firstAttribute="leading" secondItem="2GS-wt-1Um" secondAttribute="leading" id="3I0-vN-wBa"/>
                                                     <constraint firstItem="KXE-CI-dNc" firstAttribute="leading" secondItem="141-04-bV8" secondAttribute="leading" id="5qk-IO-cc8"/>
                                                     <constraint firstItem="33e-YT-kKq" firstAttribute="leading" secondItem="PML-Lp-sBt" secondAttribute="leading" id="6sC-Xb-RIR"/>
                                                     <constraint firstItem="lh5-g2-MX8" firstAttribute="trailing" secondItem="PML-Lp-sBt" secondAttribute="trailing" id="7el-f4-glh"/>
@@ -3859,15 +3976,12 @@ Independence, KY 41051</string>
                                                     <constraint firstItem="Szw-hs-5bm" firstAttribute="top" secondItem="PML-Lp-sBt" secondAttribute="bottom" constant="-35" id="ADN-Lq-oBJ"/>
                                                     <constraint firstAttribute="trailing" secondItem="IWx-bz-a7H" secondAttribute="trailing" constant="10" id="Bur-xb-tzQ"/>
                                                     <constraint firstItem="SYA-qT-o2W" firstAttribute="centerY" secondItem="Tu3-b9-OAl" secondAttribute="centerY" id="DD1-mr-eke"/>
-                                                    <constraint firstItem="xWV-Nv-Z57" firstAttribute="bottom" secondItem="2GS-wt-1Um" secondAttribute="bottom" id="Huu-8A-DYF"/>
                                                     <constraint firstAttribute="trailing" secondItem="PML-Lp-sBt" secondAttribute="trailing" constant="10" id="IUf-qQ-L3G"/>
                                                     <constraint firstItem="lh5-g2-MX8" firstAttribute="bottom" secondItem="PML-Lp-sBt" secondAttribute="bottom" id="Kmz-Pj-Z2p"/>
                                                     <constraint firstItem="IWx-bz-a7H" firstAttribute="centerY" secondItem="33e-YT-kKq" secondAttribute="centerY" id="OXL-lJ-7ck"/>
                                                     <constraint firstItem="zx4-6N-8n7" firstAttribute="top" secondItem="KXE-CI-dNc" secondAttribute="bottom" constant="20" id="OfC-4u-jcz"/>
                                                     <constraint firstItem="zx4-6N-8n7" firstAttribute="trailing" secondItem="IWx-bz-a7H" secondAttribute="trailing" id="QdU-Gh-m87"/>
-                                                    <constraint firstItem="2GS-wt-1Um" firstAttribute="bottom" secondItem="lh5-g2-MX8" secondAttribute="bottom" id="Rwd-dw-Chb"/>
                                                     <constraint firstItem="Szw-hs-5bm" firstAttribute="trailing" secondItem="PML-Lp-sBt" secondAttribute="trailing" constant="-20" id="Wik-Hz-4vo"/>
-                                                    <constraint firstItem="xWV-Nv-Z57" firstAttribute="trailing" secondItem="2GS-wt-1Um" secondAttribute="trailing" id="YPr-G5-CT2"/>
                                                     <constraint firstItem="KXE-CI-dNc" firstAttribute="top" secondItem="141-04-bV8" secondAttribute="bottom" constant="8" id="YfZ-nc-OPN"/>
                                                     <constraint firstItem="7dJ-hW-6rd" firstAttribute="leading" secondItem="33e-YT-kKq" secondAttribute="trailing" constant="20" id="Z57-zf-I3k"/>
                                                     <constraint firstItem="141-04-bV8" firstAttribute="top" secondItem="33e-YT-kKq" secondAttribute="bottom" constant="5" id="aMb-qr-DbH"/>
@@ -3879,9 +3993,7 @@ Independence, KY 41051</string>
                                                     <constraint firstItem="PML-Lp-sBt" firstAttribute="top" secondItem="mej-kI-WTu" secondAttribute="top" constant="10" id="mPB-zO-S6G"/>
                                                     <constraint firstItem="lh5-g2-MX8" firstAttribute="leading" secondItem="PML-Lp-sBt" secondAttribute="leading" id="nx5-dh-Qdj"/>
                                                     <constraint firstItem="141-04-bV8" firstAttribute="leading" secondItem="33e-YT-kKq" secondAttribute="leading" id="oQY-V0-AWd"/>
-                                                    <constraint firstItem="2GS-wt-1Um" firstAttribute="trailing" secondItem="lh5-g2-MX8" secondAttribute="trailing" id="uF1-zY-bL4"/>
                                                     <constraint firstItem="SYA-qT-o2W" firstAttribute="leading" secondItem="Tu3-b9-OAl" secondAttribute="leading" constant="15" id="udu-Aq-Zcc"/>
-                                                    <constraint firstItem="2GS-wt-1Um" firstAttribute="leading" secondItem="lh5-g2-MX8" secondAttribute="leading" id="z2X-1Z-Zjq"/>
                                                     <constraint firstItem="PML-Lp-sBt" firstAttribute="leading" secondItem="mej-kI-WTu" secondAttribute="leading" constant="10" id="zK4-aD-JXY"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
@@ -4030,7 +4142,7 @@ Independence, KY 41051</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T6Z-Cu-997" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5097.1014492753629" y="-198.21428571428569"/>
+            <point key="canvasLocation" x="6007.2463768115949" y="-198.21428571428569"/>
         </scene>
         <!--Invite Friends-->
         <scene sceneID="WF7-kK-ryi">
@@ -4195,7 +4307,7 @@ Independence, KY 41051</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ITr-pN-7ds" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6576.811594202899" y="-198.21428571428569"/>
+            <point key="canvasLocation" x="7486.9565217391309" y="-198.21428571428569"/>
         </scene>
         <!--Select Contacts-->
         <scene sceneID="9Bd-RY-sLF">
@@ -4387,25 +4499,25 @@ Independence, KY 41051</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a6F-FR-M5I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7395.652173913044" y="-198.21428571428569"/>
+            <point key="canvasLocation" x="8305.7971014492759" y="-198.21428571428569"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="chI-fq-s02">
+        <scene sceneID="MRQ-Ai-pVY">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pDd-py-MrY" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NrP-le-37h" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LFm-uG-rvT">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pnq-gK-5cz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="8l9-ep-cOm" kind="relationship" relationship="rootViewController" id="GIE-8f-np7"/>
+                        <segue destination="gSI-3q-sXc" kind="relationship" relationship="rootViewController" id="zoW-yI-26y"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sYt-mR-gfU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2IH-XH-6Gr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3473.913043478261" y="-198.21428571428569"/>
+            <point key="canvasLocation" x="4340.579710144928" y="-192.1875"/>
         </scene>
     </scenes>
     <designables>
@@ -4470,7 +4582,7 @@ Independence, KY 41051</string>
             <size key="intrinsicContentSize" width="162" height="34"/>
         </designable>
         <designable name="Nh8-lT-FJY">
-            <size key="intrinsicContentSize" width="36" height="22"/>
+            <size key="intrinsicContentSize" width="19" height="25"/>
         </designable>
         <designable name="Oaj-re-qAz">
             <size key="intrinsicContentSize" width="209" height="34"/>
@@ -4532,6 +4644,9 @@ Independence, KY 41051</string>
         <designable name="llM-bW-Gup">
             <size key="intrinsicContentSize" width="82" height="34"/>
         </designable>
+        <designable name="nyG-8O-jcW">
+            <size key="intrinsicContentSize" width="193.5" height="34"/>
+        </designable>
         <designable name="oNm-fw-dQO">
             <size key="intrinsicContentSize" width="22" height="22"/>
         </designable>
@@ -4553,6 +4668,9 @@ Independence, KY 41051</string>
         <designable name="tRR-gV-5qh">
             <size key="intrinsicContentSize" width="82" height="34"/>
         </designable>
+        <designable name="tnv-mj-79X">
+            <size key="intrinsicContentSize" width="291.5" height="34"/>
+        </designable>
         <designable name="vj7-k5-9f0">
             <size key="intrinsicContentSize" width="192.5" height="34"/>
         </designable>
@@ -4564,6 +4682,9 @@ Independence, KY 41051</string>
         </designable>
         <designable name="xk3-dp-Cey">
             <size key="intrinsicContentSize" width="194.5" height="34"/>
+        </designable>
+        <designable name="zTC-WR-qkX">
+            <size key="intrinsicContentSize" width="79" height="33"/>
         </designable>
     </designables>
     <resources>
@@ -4585,7 +4706,7 @@ Independence, KY 41051</string>
         <image name="left_arrow_icon" width="19" height="14"/>
         <image name="location_icon" width="19" height="26"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <image name="map_icon" width="27" height="27"/>
+        <image name="map_icon" width="19" height="25"/>
         <image name="menu_drawer_icon" width="27" height="17"/>
         <image name="past_plan_icon" width="20" height="22"/>
         <image name="phone_email_icon" width="20" height="24"/>

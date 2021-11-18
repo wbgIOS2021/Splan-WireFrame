@@ -50,7 +50,7 @@ class HomeViewController: BaseViewController {
         }, with: "myprofile")
         
         sideMenuController?.cache(viewControllerGenerator: {
-            self.storyboard?.instantiateViewController(withIdentifier: "DescriptionPageViewController")
+             self.storyboard?.instantiateViewController(withIdentifier: "DescriptionPageViewController")
             
         }, with: "aboutSplan")
         

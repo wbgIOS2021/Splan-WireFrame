@@ -8,6 +8,10 @@
 import UIKit
 import CoreData
 import IQKeyboardManagerSwift
+import GoogleMaps
+
+// 1
+let googleApiKey = "AIzaSyAlxEBGk5-gwYle2lCbw7aT4MAVsZEzrpk"
 
 @available(iOS 13.0, *)
 @main
@@ -20,6 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barStyle = .black
         NetworkListner.shared.startNWListner()
         IQKeyboardManager.shared.enable = true
+        
+        //2
+        GMSServices.provideAPIKey(googleApiKey)
         return true
     }
 

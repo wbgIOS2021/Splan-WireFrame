@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>By accessing your location, this app can find you a good place to eat.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -66,7 +68,7 @@
 	<string>Light</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
-    <key>NSContactsUsageDescription</key>
-    <string>we need your contact details for invitations purpose</string>
+	<key>NSContactsUsageDescription</key>
+	<string>we need your contact details for invitations purpose</string>
 </dict>
 </plist>

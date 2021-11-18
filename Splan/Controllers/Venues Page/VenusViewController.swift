@@ -131,6 +131,10 @@ class VenusViewController: UIViewController {
             isAppliedFamilyStyleFilter = 1
         }
     }
+    @IBAction func customLocationActionBtn(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "CustomLocationViewController") as! CustomLocationViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
     
 }

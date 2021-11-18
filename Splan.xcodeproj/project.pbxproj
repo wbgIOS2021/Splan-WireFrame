@@ -12,6 +12,7 @@
 		2008B6B3272ACB5200FBCA5D /* UserListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2008B6B1272ACB5200FBCA5D /* UserListTableViewCell.xib */; };
 		201C3F03273E8755006423B7 /* BannerImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201C3F02273E8755006423B7 /* BannerImageCollectionViewCell.swift */; };
 		2026164D272FFBCA00FF013A /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2026164C272FFBCA00FF013A /* MyProfileViewController.swift */; };
+		2031CB0B2744E61800B8BB80 /* CustomLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2031CB0A2744E61800B8BB80 /* CustomLocationViewController.swift */; };
 		20424669273903970017C846 /* VenusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20424668273903970017C846 /* VenusViewController.swift */; };
 		2042466F273934100017C846 /* CreatePlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2042466E273934100017C846 /* CreatePlanViewController.swift */; };
 		205934E7273A497D002B86AC /* InviteFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205934E6273A497D002B86AC /* InviteFriendsViewController.swift */; };
@@ -56,9 +57,9 @@
 		20DB242C272BDEC000DEDEE2 /* SideMneuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB2429272BDEBF00DEDEE2 /* SideMneuTableViewCell.swift */; };
 		20DB242E272BDEC000DEDEE2 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB242B272BDEBF00DEDEE2 /* SideMenuViewController.swift */; };
 		20EA61392731387D001D8A21 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EA61382731387D001D8A21 /* EditProfileViewController.swift */; };
-		73CAD2E9B306CB27B7974445 /* Pods_SplanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038C6C2FD20FF88FC8E5EFFE /* Pods_SplanTests.framework */; };
-		8F473F91F5536DADE13D4FBE /* Pods_Splan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A7885ACC03DE4868B470BE /* Pods_Splan.framework */; };
-		BF5B26D6C8D0EB95F5FAEDD3 /* Pods_Splan_SplanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C71CDD68EF73C20F3D805A /* Pods_Splan_SplanUITests.framework */; };
+		2E5897394368BF24F17AF35C /* Pods_Splan_SplanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0212D8B1BE790B281491956F /* Pods_Splan_SplanUITests.framework */; };
+		A215BD101B842DD55B93A720 /* Pods_SplanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8E2532018A7E49E745484E /* Pods_SplanTests.framework */; };
+		FA977E516D994D6E3A987F1E /* Pods_Splan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FBFC1ADDF63170EE55DCFC /* Pods_Splan.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,14 +80,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		038C6C2FD20FF88FC8E5EFFE /* Pods_SplanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		09C71CDD68EF73C20F3D805A /* Pods_Splan_SplanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Splan_SplanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0212D8B1BE790B281491956F /* Pods_Splan_SplanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Splan_SplanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2008B6A8272ACB0100FBCA5D /* EditDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDetailsViewController.swift; sourceTree = "<group>"; };
 		2008B6B0272ACB5200FBCA5D /* UserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
 		2008B6B1272ACB5200FBCA5D /* UserListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListTableViewCell.xib; sourceTree = "<group>"; };
-		200AD7F10F6CC1ED3A9A8735 /* Pods-Splan-SplanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Splan-SplanUITests.debug.xcconfig"; path = "Target Support Files/Pods-Splan-SplanUITests/Pods-Splan-SplanUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		201C3F02273E8755006423B7 /* BannerImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		2026164C272FFBCA00FF013A /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		2031CB0A2744E61800B8BB80 /* CustomLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocationViewController.swift; sourceTree = "<group>"; };
 		20424668273903970017C846 /* VenusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenusViewController.swift; sourceTree = "<group>"; };
 		2042466E273934100017C846 /* CreatePlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlanViewController.swift; sourceTree = "<group>"; };
 		205934E6273A497D002B86AC /* InviteFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendsViewController.swift; sourceTree = "<group>"; };
@@ -134,15 +134,17 @@
 		20D5DA762726D2A20078A4CC /* AlertMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessages.swift; sourceTree = "<group>"; };
 		20D5DA822726D2AC0078A4CC /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		20D5DA882726D3040078A4CC /* NoInternetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetViewController.swift; sourceTree = "<group>"; };
-		20D764151F1076C14E0EA74E /* Pods-Splan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Splan.debug.xcconfig"; path = "Target Support Files/Pods-Splan/Pods-Splan.debug.xcconfig"; sourceTree = "<group>"; };
 		20DB2429272BDEBF00DEDEE2 /* SideMneuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMneuTableViewCell.swift; sourceTree = "<group>"; };
 		20DB242B272BDEBF00DEDEE2 /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		20EA61382731387D001D8A21 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
-		6D6326E7A1E3714735A3EF3B /* Pods-SplanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplanTests.release.xcconfig"; path = "Target Support Files/Pods-SplanTests/Pods-SplanTests.release.xcconfig"; sourceTree = "<group>"; };
-		A1A7885ACC03DE4868B470BE /* Pods_Splan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Splan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4EAC2E3E717D55200DBD10F /* Pods-Splan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Splan.release.xcconfig"; path = "Target Support Files/Pods-Splan/Pods-Splan.release.xcconfig"; sourceTree = "<group>"; };
-		D083DCFB00B57A41731158B2 /* Pods-Splan-SplanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Splan-SplanUITests.release.xcconfig"; path = "Target Support Files/Pods-Splan-SplanUITests/Pods-Splan-SplanUITests.release.xcconfig"; sourceTree = "<group>"; };
-		DE780A62765D0F50C4DFADBE /* Pods-SplanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplanTests.debug.xcconfig"; path = "Target Support Files/Pods-SplanTests/Pods-SplanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5AC608AC5EB43A13F1CB126D /* Pods-Splan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Splan.debug.xcconfig"; path = "Target Support Files/Pods-Splan/Pods-Splan.debug.xcconfig"; sourceTree = "<group>"; };
+		6791447ABB18FF31076A0CB4 /* Pods-Splan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Splan.release.xcconfig"; path = "Target Support Files/Pods-Splan/Pods-Splan.release.xcconfig"; sourceTree = "<group>"; };
+		86B6ADC74D94B5CC0C8F6521 /* Pods-SplanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplanTests.debug.xcconfig"; path = "Target Support Files/Pods-SplanTests/Pods-SplanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9169672CD8517A2B25A05536 /* Pods-Splan-SplanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Splan-SplanUITests.release.xcconfig"; path = "Target Support Files/Pods-Splan-SplanUITests/Pods-Splan-SplanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A0FBFC1ADDF63170EE55DCFC /* Pods_Splan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Splan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0B38389DC5108DD019A881 /* Pods-Splan-SplanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Splan-SplanUITests.debug.xcconfig"; path = "Target Support Files/Pods-Splan-SplanUITests/Pods-Splan-SplanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF8E2532018A7E49E745484E /* Pods_SplanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC89A146C80BFA3A37851233 /* Pods-SplanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplanTests.release.xcconfig"; path = "Target Support Files/Pods-SplanTests/Pods-SplanTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F473F91F5536DADE13D4FBE /* Pods_Splan.framework in Frameworks */,
+				FA977E516D994D6E3A987F1E /* Pods_Splan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73CAD2E9B306CB27B7974445 /* Pods_SplanTests.framework in Frameworks */,
+				A215BD101B842DD55B93A720 /* Pods_SplanTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF5B26D6C8D0EB95F5FAEDD3 /* Pods_Splan_SplanUITests.framework in Frameworks */,
+				2E5897394368BF24F17AF35C /* Pods_Splan_SplanUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +190,14 @@
 				20EA61382731387D001D8A21 /* EditProfileViewController.swift */,
 			);
 			path = "My Profile";
+			sourceTree = "<group>";
+		};
+		2031CB092744E5AC00B8BB80 /* Custom Location */ = {
+			isa = PBXGroup;
+			children = (
+				2031CB0A2744E61800B8BB80 /* CustomLocationViewController.swift */,
+			);
+			path = "Custom Location";
 			sourceTree = "<group>";
 		};
 		20424667273903780017C846 /* Venues Page */ = {
@@ -296,7 +306,7 @@
 				2098FB3F2726B85A00D07EDE /* SplanUITests */,
 				2098FB192726B85000D07EDE /* Products */,
 				938D978A6774A4759B12C2DD /* Pods */,
-				4F7EC64394A9D1CB21A96F13 /* Frameworks */,
+				3A94ED0B8BE7D4CC07848238 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -356,6 +366,7 @@
 		20C421472726BB740023FA23 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2031CB092744E5AC00B8BB80 /* Custom Location */,
 				205934E5273A493E002B86AC /* Invite Friends */,
 				2042466D273933F70017C846 /* Create Plan */,
 				20424667273903780017C846 /* Venues Page */,
@@ -452,12 +463,12 @@
 			path = "Side Menu";
 			sourceTree = "<group>";
 		};
-		4F7EC64394A9D1CB21A96F13 /* Frameworks */ = {
+		3A94ED0B8BE7D4CC07848238 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A1A7885ACC03DE4868B470BE /* Pods_Splan.framework */,
-				09C71CDD68EF73C20F3D805A /* Pods_Splan_SplanUITests.framework */,
-				038C6C2FD20FF88FC8E5EFFE /* Pods_SplanTests.framework */,
+				A0FBFC1ADDF63170EE55DCFC /* Pods_Splan.framework */,
+				0212D8B1BE790B281491956F /* Pods_Splan_SplanUITests.framework */,
+				BF8E2532018A7E49E745484E /* Pods_SplanTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -465,12 +476,12 @@
 		938D978A6774A4759B12C2DD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				20D764151F1076C14E0EA74E /* Pods-Splan.debug.xcconfig */,
-				B4EAC2E3E717D55200DBD10F /* Pods-Splan.release.xcconfig */,
-				200AD7F10F6CC1ED3A9A8735 /* Pods-Splan-SplanUITests.debug.xcconfig */,
-				D083DCFB00B57A41731158B2 /* Pods-Splan-SplanUITests.release.xcconfig */,
-				DE780A62765D0F50C4DFADBE /* Pods-SplanTests.debug.xcconfig */,
-				6D6326E7A1E3714735A3EF3B /* Pods-SplanTests.release.xcconfig */,
+				5AC608AC5EB43A13F1CB126D /* Pods-Splan.debug.xcconfig */,
+				6791447ABB18FF31076A0CB4 /* Pods-Splan.release.xcconfig */,
+				BB0B38389DC5108DD019A881 /* Pods-Splan-SplanUITests.debug.xcconfig */,
+				9169672CD8517A2B25A05536 /* Pods-Splan-SplanUITests.release.xcconfig */,
+				86B6ADC74D94B5CC0C8F6521 /* Pods-SplanTests.debug.xcconfig */,
+				FC89A146C80BFA3A37851233 /* Pods-SplanTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -482,11 +493,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2098FB452726B85A00D07EDE /* Build configuration list for PBXNativeTarget "Splan" */;
 			buildPhases = (
-				DB8FB4DEC3F53D08223CE2E1 /* [CP] Check Pods Manifest.lock */,
+				B404AB6E6C06D1C91EBD28AB /* [CP] Check Pods Manifest.lock */,
 				2098FB142726B85000D07EDE /* Sources */,
 				2098FB152726B85000D07EDE /* Frameworks */,
 				2098FB162726B85000D07EDE /* Resources */,
-				FCE5DC8D1B4D500DBCB68DEF /* [CP] Embed Pods Frameworks */,
+				E117DCDA1D3156E71A31FEC5 /* [CP] Embed Pods Frameworks */,
+				6DE83480F9EBE1AE8071CE26 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -501,7 +513,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2098FB482726B85A00D07EDE /* Build configuration list for PBXNativeTarget "SplanTests" */;
 			buildPhases = (
-				FB6741D973152904562829A3 /* [CP] Check Pods Manifest.lock */,
+				44941D5267E419833291150E /* [CP] Check Pods Manifest.lock */,
 				2098FB2D2726B85A00D07EDE /* Sources */,
 				2098FB2E2726B85A00D07EDE /* Frameworks */,
 				2098FB2F2726B85A00D07EDE /* Resources */,
@@ -520,11 +532,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2098FB4B2726B85A00D07EDE /* Build configuration list for PBXNativeTarget "SplanUITests" */;
 			buildPhases = (
-				5FE050042FD2AE85B4C21CBD /* [CP] Check Pods Manifest.lock */,
+				4E4E9484B304DEEA35B11E19 /* [CP] Check Pods Manifest.lock */,
 				2098FB382726B85A00D07EDE /* Sources */,
 				2098FB392726B85A00D07EDE /* Frameworks */,
 				2098FB3A2726B85A00D07EDE /* Resources */,
-				3410C454611712653C828762 /* [CP] Embed Pods Frameworks */,
+				0C8ABA69F3D0204F70F80FAB /* [CP] Embed Pods Frameworks */,
+				A85CA3A37F9BEFC65C3AC206 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -615,7 +628,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3410C454611712653C828762 /* [CP] Embed Pods Frameworks */ = {
+		0C8ABA69F3D0204F70F80FAB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -632,51 +645,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Splan-SplanUITests/Pods-Splan-SplanUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5FE050042FD2AE85B4C21CBD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Splan-SplanUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DB8FB4DEC3F53D08223CE2E1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Splan-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FB6741D973152904562829A3 /* [CP] Check Pods Manifest.lock */ = {
+		44941D5267E419833291150E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -698,7 +667,85 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FCE5DC8D1B4D500DBCB68DEF /* [CP] Embed Pods Frameworks */ = {
+		4E4E9484B304DEEA35B11E19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Splan-SplanUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DE83480F9EBE1AE8071CE26 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Splan/Pods-Splan-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Splan/Pods-Splan-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Splan/Pods-Splan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A85CA3A37F9BEFC65C3AC206 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Splan-SplanUITests/Pods-Splan-SplanUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Splan-SplanUITests/Pods-Splan-SplanUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Splan-SplanUITests/Pods-Splan-SplanUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B404AB6E6C06D1C91EBD28AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Splan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E117DCDA1D3156E71A31FEC5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -754,6 +801,7 @@
 				2098FB1E2726B85000D07EDE /* SceneDelegate.swift in Sources */,
 				2075EAA7272A9CAF00079DB6 /* MyPlanDetailsViewController.swift in Sources */,
 				2074C7AB27283D27004A9BCA /* VerifyOTPViewController.swift in Sources */,
+				2031CB0B2744E61800B8BB80 /* CustomLocationViewController.swift in Sources */,
 				2008B6A9272ACB0100FBCA5D /* EditDetailsViewController.swift in Sources */,
 				205934EF273A928D002B86AC /* SelectContactViewController.swift in Sources */,
 				205934E7273A497D002B86AC /* InviteFriendsViewController.swift in Sources */,
@@ -929,7 +977,7 @@
 		};
 		2098FB462726B85A00D07EDE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20D764151F1076C14E0EA74E /* Pods-Splan.debug.xcconfig */;
+			baseConfigurationReference = 5AC608AC5EB43A13F1CB126D /* Pods-Splan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -946,12 +994,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Debug;
 		};
 		2098FB472726B85A00D07EDE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4EAC2E3E717D55200DBD10F /* Pods-Splan.release.xcconfig */;
+			baseConfigurationReference = 6791447ABB18FF31076A0CB4 /* Pods-Splan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -968,12 +1017,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Release;
 		};
 		2098FB492726B85A00D07EDE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE780A62765D0F50C4DFADBE /* Pods-SplanTests.debug.xcconfig */;
+			baseConfigurationReference = 86B6ADC74D94B5CC0C8F6521 /* Pods-SplanTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -996,7 +1046,7 @@
 		};
 		2098FB4A2726B85A00D07EDE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D6326E7A1E3714735A3EF3B /* Pods-SplanTests.release.xcconfig */;
+			baseConfigurationReference = FC89A146C80BFA3A37851233 /* Pods-SplanTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1019,7 +1069,7 @@
 		};
 		2098FB4C2726B85A00D07EDE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 200AD7F10F6CC1ED3A9A8735 /* Pods-Splan-SplanUITests.debug.xcconfig */;
+			baseConfigurationReference = BB0B38389DC5108DD019A881 /* Pods-Splan-SplanUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1040,7 +1090,7 @@
 		};
 		2098FB4D2726B85A00D07EDE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D083DCFB00B57A41731158B2 /* Pods-Splan-SplanUITests.release.xcconfig */;
+			baseConfigurationReference = 9169672CD8517A2B25A05536 /* Pods-Splan-SplanUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
