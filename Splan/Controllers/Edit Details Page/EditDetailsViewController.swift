@@ -34,7 +34,7 @@ class EditDetailsViewController: UIViewController {
     @IBOutlet weak var bannerPageControl: UIPageControl!
     var timer:Timer?
     var currentCellIndex = 0
-    var bannerImageArray = ["user_icon-1","restrurant_icon","app_logo","no_image"]
+    var bannerImageArray = ["restrurant_icon","app_logo","restrurant_icon","no_image"]
     override func viewDidLoad() {
         super.viewDidLoad()
         cellRegister()

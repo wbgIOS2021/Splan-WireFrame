@@ -14,11 +14,9 @@ class DescriptionPageViewController: UIViewController {
     @IBOutlet weak var descriptionContent: UILabel!
     @IBOutlet weak var navbar: UINavigationBar!
     
-    var page_title = "Term & Condition"
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = page_title
-        descriptionTitle.text = page_title
+        
 
     }
     override func viewWillAppear(_ animated: Bool) {

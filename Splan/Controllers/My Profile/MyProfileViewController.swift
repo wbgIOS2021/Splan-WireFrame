@@ -17,7 +17,7 @@ class MyProfileViewController: UIViewController {
     @IBOutlet weak var changePasswordBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         changePasswordBtn.dropShadow()
     }
 
@@ -39,7 +39,7 @@ class MyProfileViewController: UIViewController {
     }
     
     @IBAction func editMobileActionBtn(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "VerifyOTPViewController") as! VerifyOTPViewController
+        let vc = storyboard?.instantiateViewController(withIdentifier: "GetOTPViewController") as! GetOTPViewController
         vc.isComeFromMyProfile = true
         navigationController?.pushViewController(vc, animated: true)
     }

@@ -28,7 +28,7 @@ class CreatePlanViewController: UIViewController {
     @IBOutlet weak var bannerPageControl: UIPageControl!
     var timer:Timer?
     var currentCellIndex = 0
-    var bannerImageArray = ["user_icon-1","restrurant_icon","app_logo","no_image"]
+    var bannerImageArray = ["restrurant_icon","app_logo","restrurant_icon","no_image"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -126,7 +126,7 @@ extension CreatePlanViewController
     @IBAction func selectTimeActionBtn(_ sender: Any) {
     }
     @IBAction func inviteFriendActionBtn(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "InviteFriendsViewController") as! InviteFriendsViewController
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SelectContactViewController") as! SelectContactViewController
         self.navigationController?.pushViewController(vc, animated: true)
 
     }

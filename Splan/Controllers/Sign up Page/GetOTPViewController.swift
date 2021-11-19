@@ -12,10 +12,16 @@ class GetOTPViewController: UIViewController {
     @IBOutlet weak var countryCodeBtn: UIButton!
     @IBOutlet weak var getOtpBtn: UIButton!
     @IBOutlet weak var mobileTextField: UITextField!
+    @IBOutlet weak var welcomeMessage: UILabel!
+    
+    var isComeFromMyProfile = false
     override func viewDidLoad() {
         super.viewDidLoad()
         getOtpBtn.dropShadowLight()
         // Do any additional setup after loading the view.
+        if isComeFromMyProfile == true{
+            welcomeMessage.isHidden = true
+        }
     }
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = true
@@ -48,6 +54,7 @@ extension GetOTPViewController
                 self.showToast(message: "One time Password is 111111", seconds: 1.5)
             }
             let vc = storyboard?.instantiateViewController(withIdentifier: "VerifyOTPViewController") as! VerifyOTPViewController
+            vc.isComeFromMyProfile = isComeFromMyProfile
             navigationController?.pushViewController(vc, animated: true)
         }
     }

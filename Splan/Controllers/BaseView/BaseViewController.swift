@@ -25,6 +25,10 @@ extension UIViewController
     {
         navigationController?.popViewController(animated: true)
     }
+    func backCustomTime(time:Int) {
+        let viewControllers: [UIViewController] = self.navigationController!.viewControllers as [UIViewController]
+        self.navigationController!.popToViewController(viewControllers[viewControllers.count - time], animated: true)
+    }
     func homePage()
     {
         let vc = storyboard?.instantiateViewController(withIdentifier: "SideMenuController") as! SideMenuController

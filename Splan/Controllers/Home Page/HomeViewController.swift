@@ -58,6 +58,18 @@ class HomeViewController: BaseViewController {
             self.storyboard?.instantiateViewController(withIdentifier: "ContactUsViewController")
             
         }, with: "contactUS")
+        
+        sideMenuController?.cache(viewControllerGenerator: {
+            self.storyboard?.instantiateViewController(withIdentifier: "TermAndCondtionViewController")
+            
+        }, with: "termAndCondition")
+        
+        
+        sideMenuController?.cache(viewControllerGenerator: {
+            self.storyboard?.instantiateViewController(withIdentifier: "PastPlanViewController")
+            
+        }, with: "pastPlans")
+        
     }
     
     func cellRegister()

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SideMenuSwift
 
 class VerifyOTPViewController: UIViewController {
 
@@ -23,6 +24,7 @@ class VerifyOTPViewController: UIViewController {
         super.viewDidLoad()
         setupThings()
         verifyBtn.dropShadowLight()
+       
     }
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = true
@@ -113,9 +115,7 @@ extension VerifyOTPViewController
         }else if isComeFromMyProfile == true {
             otp_code = "\(otpTextField_1.text!)" + "\(otpTextField_2.text!)" + "\(otpTextField_3.text!)" + "\(otpTextField_4.text!)" + "\(otpTextField_5.text!)" + "\(otpTextField_6.text!)"
             
-//            let vc = storyboard?.instantiateViewController(withIdentifier: "MyProfileViewController") as! MyProfileViewController
-//            navigationController?.pushViewController(vc, animated: true)
-            self.backBtn()
+            backCustomTime(time:3)
         }else{
             otp_code = "\(otpTextField_1.text!)" + "\(otpTextField_2.text!)" + "\(otpTextField_3.text!)" + "\(otpTextField_4.text!)" + "\(otpTextField_5.text!)" + "\(otpTextField_6.text!)"
             

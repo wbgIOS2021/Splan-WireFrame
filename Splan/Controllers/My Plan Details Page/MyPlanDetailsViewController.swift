@@ -15,8 +15,10 @@ class MyPlanDetailsViewController: UIViewController {
     @IBOutlet weak var invitedUsersTableViewHeight: NSLayoutConstraint!
 
     @IBOutlet weak var chatBtn: UIButton!
-    
+    @IBOutlet weak var editPlan: UIBarButtonItem!
     var bolValue:[Bool] = []
+    var isComeFromPastPlan = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         cellRegister()
@@ -25,6 +27,10 @@ class MyPlanDetailsViewController: UIViewController {
         chatBtn.roundShadow()
         for _ in 0..<6{
             self.bolValue.append(false)
+        }
+        if isComeFromPastPlan == true{
+            chatBtn.isHidden = true
+            self.navigationItem.rightBarButtonItem = nil
         }
 
     }
@@ -93,6 +99,10 @@ extension MyPlanDetailsViewController: UITableViewDataSource
             let cell = eventDetailsTableView.dequeueReusableCell(withIdentifier: "EventPlaceTableViewCell", for: indexPath) as! EventPlaceTableViewCell
             //cell.btn_1.isHidden = true
             cell.btn_3.isHidden = true
+            if isComeFromPastPlan == true{
+                cell.btn_1.isHidden = true
+                cell.btn_2.isHidden = true
+            }
             return cell
         }
         let cell = invitedUsersTableView.dequeueReusableCell(withIdentifier: "InvitedUsersTableViewCell", for: indexPath) as! InvitedUsersTableViewCell

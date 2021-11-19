@@ -88,7 +88,9 @@ extension SideMenuViewController: UITableViewDelegate
         case 1:
             // Past Plan
             print("Past Plan - ",menuItems[indexPath.row])
+            sideMenuController?.setContentViewController(with: "pastPlans")
             sideMenuController?.hideMenu()
+
         case 2:
             //Profile
             print("Profile - ",menuItems[indexPath.row])
@@ -109,8 +111,9 @@ extension SideMenuViewController: UITableViewDelegate
             
         case 5:
             // Term & Condition
-            sideMenuController?.hideMenu()
             print("Term & Condition - ",menuItems[indexPath.row])
+            sideMenuController?.setContentViewController(with: "termAndCondition")
+            sideMenuController?.hideMenu()
         case 6:
             // Logout
             sideMenuController?.hideMenu()
