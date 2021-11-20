@@ -100,6 +100,7 @@ extension PastPlanViewController: UITableViewDelegate
             self.navigationController?.pushViewController(vc, animated: true)
             }else{
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "InvitationDetailsViewController") as! InvitationDetailsViewController
+                vc.isComeFromPastPlan = true
                 self.navigationController?.pushViewController(vc, animated: true)
             }
         }

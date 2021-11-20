@@ -23,10 +23,20 @@ class InvitationDetailsViewController: UIViewController {
     @IBOutlet weak var userListTableView: UITableView!
     @IBOutlet weak var userListTableViewHeight: NSLayoutConstraint!
    
+    @IBOutlet weak var eventAcceptDenyViewHeight: NSLayoutConstraint!
+    @IBOutlet weak var chatBtn: UIButton!
+    var isComeFromPastPlan = false
+
     override func viewDidLoad() {
         super.viewDidLoad()
         cellRegister()
-        
+        if isComeFromPastPlan == true{
+            eventAcceptDenyViewHeight.constant = 340
+            AcceptBtn.isHidden = true
+            DenyBtn.isHidden = true
+            chatBtn.isHidden = true
+            self.navigationItem.rightBarButtonItem = nil
+        }
         // Do any additional setup after loading the view.
     }
     

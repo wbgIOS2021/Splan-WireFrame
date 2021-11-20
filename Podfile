@@ -22,4 +22,5 @@ target 'Splan' do
     pod 'SDWebImage', '~> 4.0';
     pod 'GoogleMaps';
 
+
 end

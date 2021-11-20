@@ -101,7 +101,8 @@ extension MyPlanDetailsViewController: UITableViewDataSource
             cell.btn_3.isHidden = true
             if isComeFromPastPlan == true{
                 cell.btn_1.isHidden = true
-                cell.btn_2.isHidden = true
+                cell.btn_2.setImage(UIImage(named: "restaurant_menu_icon"), for: UIControl.State.normal)
+
             }
             return cell
         }

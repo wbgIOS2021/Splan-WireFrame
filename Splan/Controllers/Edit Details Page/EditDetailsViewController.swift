@@ -6,6 +6,7 @@
 //
 
 import UIKit
+//import WWCalendarTimeSelector
 
 class EditDetailsViewController: UIViewController {
 
@@ -120,16 +121,25 @@ extension EditDetailsViewController
     
     @IBAction func restaurant_menu(_ sender: Any) {
     }
-    @IBAction func callBtnAction(_ sender: Any) {
-    }
+
     @IBAction func selectDateAction(_ sender: Any) {
+        let popupVC = storyboard?.instantiateViewController(withIdentifier: "DateViewController") as! DateViewController
+        popupVC.modalPresentationStyle = .overCurrentContext
+        popupVC.pdDelegate = self
+        present(popupVC, animated: true, completion: nil)
     }
+    
     @IBAction func selectTimeActionBtn(_ sender: Any) {
+        let popupVC = storyboard?.instantiateViewController(withIdentifier: "TimeViewController") as! TimeViewController
+        popupVC.modalPresentationStyle = .overCurrentContext
+        popupVC.pdDelegate = self
+        present(popupVC, animated: true, completion: nil)
     }
     @IBAction func inviteFriendActionBtn(_ sender: Any) {
     }
     @IBAction func submitPlanActionBtn(_ sender: Any) {
     }
+    
 }
 
 
@@ -186,5 +196,20 @@ extension EditDetailsViewController:UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: bannerCollection.frame.width, height: bannerCollection.frame.height)
         
+    }
+}
+
+//Custom Delegate Code
+extension EditDetailsViewController:SelectDateTimeDelegate
+{
+    func date(date: String) {
+        print("date",date)
+        self.selectDateBtn.setTitle(date, for: .normal)
+
+    }
+    
+    func time(time: String) {
+        print("time",time)
+        self.selectTimeBtn.setTitle(time, for: .normal)
     }
 }
